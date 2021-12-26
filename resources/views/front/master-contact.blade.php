@@ -94,12 +94,12 @@
     <header class="header __js_fixed-header" id="header">
       <div class="header__inner">
         <!-- Logo-->
-        <a class="header__logo logo animsition-link" href="index-2.html">
+        <a class="header__logo logo animsition-link" href="{{url('/')}}">
           <span class="logo__large">DrenlaHub</span>
           <span class="logo__small">Architectural Visualization</span>
         </a>
         <div class="container"></div>
-        <a class="header__phone" href="tel:+72126742510">+7 (212) 674-25-10</a>
+        <a class="header__phone" href="tel:+25459947183">+254759947183</a>
         <!-- Burger-->
         <button class="header__menu-toggle menu-toggle" type="button">
           <span class="visually-hidden">Menu</span>

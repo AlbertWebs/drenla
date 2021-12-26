@@ -95,7 +95,7 @@
     <header class="header header--white __js_fixed-header">
       <div class="header__inner">
         <!-- Logo-->
-        <a class="header__logo logo">
+        <a class="header__logo logo animsition-link" href="{{url('/')}}">
           <span class="logo__large">DrenlaHub</span>
           <span class="logo__small">Architectural Visualization</span>
         </a>
