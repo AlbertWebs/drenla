@@ -16,16 +16,16 @@ class HomeController extends Controller
         SEOMeta::setCanonical(''.url('/').'');
 
         OpenGraph::setDescription('Interior Design and Architectural Visualization Hub. To speak for your unbuilt project');
-        OpenGraph::setTitle('Home');
+        OpenGraph::setTitle('Interior Design and Architectural Visualization | Drenla Hub');
         OpenGraph::setUrl(''.url('/').'');
         OpenGraph::addProperty('type', 'articles');
 
-        TwitterCard::setTitle('Homepage');
+        TwitterCard::setTitle('Interior Design and Architectural Visualization | Drenla Hub');
         TwitterCard::setSite('@LuizVinicius73');
 
-        JsonLd::setTitle('Homepage');
-        JsonLd::setDescription('This is my page description');
-        JsonLd::addImage('https://codecasts.com.br/img/logo.jpg');
+        JsonLd::setTitle('Interior Design and Architectural Visualization | Drenla Hub');
+        JsonLd::setDescription('Interior Design and Architectural Visualization Hub. To speak for your unbuilt project');
+        JsonLd::addImage('https://localhost:8000/img/logo.jpg');
 
         return view('front.index');
     }
