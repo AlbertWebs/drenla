@@ -32,11 +32,20 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => 'de79f43199342f20d2ec76f4a2da721b69d612ee',
+    'reference' => '256e038e6476146b5b7e2856f657bdfa145fa118',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
   array (
+    'artesaos/seotools' => 
+    array (
+      'pretty_version' => 'v0.20.2',
+      'version' => '0.20.2.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '94fbb3b331dab7433b335a9aafd74a312a5525fe',
+    ),
     'asm89/stack-cors' => 
     array (
       'pretty_version' => 'v2.0.3',
@@ -462,7 +471,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => 'de79f43199342f20d2ec76f4a2da721b69d612ee',
+      'reference' => '256e038e6476146b5b7e2856f657bdfa145fa118',
     ),
     'laravel/sail' => 
     array (
