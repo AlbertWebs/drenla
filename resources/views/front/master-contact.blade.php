@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
@@ -92,49 +91,15 @@
     </svg>
   </div>
   <div class="animsition">
-    <header class="header header--white __js_fixed-header">
+    <header class="header __js_fixed-header" id="header">
       <div class="header__inner">
         <!-- Logo-->
-        <a class="header__logo logo">
+        <a class="header__logo logo animsition-link" href="index-2.html">
           <span class="logo__large">DrenlaHub</span>
           <span class="logo__small">Architectural Visualization</span>
         </a>
         <div class="container"></div>
-        <!-- Social-->
-        <ul class="header__social social--white social">
-          <li class="social__item">
-            <a class="social__link" href="#" target="_blank">
-              <svg width="20" height="20" aria-label="facebook icon">
-                <use xlink:href="#facebook"></use>
-              </svg>
-              <span class="visually-hidden">facebook</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#" target="_blank">
-              <svg width="20" height="20" aria-label="twitter icon">
-                <use xlink:href="#twitter"></use>
-              </svg>
-              <span class="visually-hidden">twitter</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#" target="_blank">
-              <svg width="20" height="20" aria-label="google-plus icon">
-                <use xlink:href="#google-plus"></use>
-              </svg>
-              <span class="visually-hidden">google-plus</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#" target="_blank">
-              <svg width="20" height="20" aria-label="linkedin-original icon">
-                <use xlink:href="#linkedin-original"></use>
-              </svg>
-              <span class="visually-hidden">linkedin-original</span>
-            </a>
-          </li>
-        </ul>
+        <a class="header__phone" href="tel:+72126742510">+7 (212) 674-25-10</a>
         <!-- Burger-->
         <button class="header__menu-toggle menu-toggle" type="button">
           <span class="visually-hidden">Menu</span>
@@ -142,7 +107,7 @@
       </div>
     </header>
     <!-- Site menu-->
-    <div class="mobile-canvas mobile-canvas--social __js_mobile-canvas">
+    <div class="mobile-canvas __js_mobile-canvas">
       <button class="mobile-canvas__close" type="button">
         <svg width="24" height="24">
           <use xlink:href="#close"></use>
@@ -163,6 +128,7 @@
       </ul>
       @include('front.menu')
       <div class="mobile-canvas__bottom">
+        <a class="mobile-canvas__phone" href="tel:+72126742510">+7 (212) 674-25-10</a>
         <div class="mobile-canvas__copy">
           © <?php echo date('Y') ?> <span>Drenla Hub.</span> All Rights Reserved.
           <br>Powered by <span>Designekta Studios</span>
@@ -205,14 +171,60 @@
       </div>
     </div>
     @yield('content')
-    <footer class="footer footer--lite footer--white">
+    <footer class="footer __js_fixed-footer">
       <div class="footer__inner container">
         <div class="row">
-          <div class="col-6">
-            <div class="footer__copy">© Drenla Hub <?php echo date('Y') ?>.</div>
+          <div class="footer__column col-12 col-sm">
+            <a class="footer__logo logo--borderless logo animsition-link" href="index-2.html">
+              <span class="logo__large">DrenlaHub</span>
+              <span class="logo__small">Architectural Visualization</span>
+            </a>
           </div>
-          <div class="col-6 d-flex">
-            <ul class="footer__lang-switcher lang-switcher lang-switcher--line">
+          <!-- Copyrights-->
+          <div class="footer__column col-12 col-lg order-2 order-lg-0">
+            <div class="footer__copyright">© Drenla Hub. <?php echo date('Y') ?>
+              <br> All Rights Resevered
+            </div>
+            <!-- Footer menu-->
+          </div>
+          <div class="footer__column col-6 col-sm">
+            <ul class="footer__column-menu">
+              <li class="footer__column-item">
+                <a class="footer__column-link animsition-link" href="#">Site Map</a>
+              </li>
+              <li class="footer__column-item">
+                <a class="footer__column-link animsition-link" href="#">Terms &amp; Conditions</a>
+              </li>
+              <li class="footer__column-item">
+                <a class="footer__column-link animsition-link" href="#">Privacy Policy</a>
+              </li>
+              <li class="footer__column-item">
+                <a class="footer__column-link animsition-link" href="#">Help</a>
+              </li>
+              <li class="footer__column-item">
+                <a class="footer__column-link animsition-link" href="#">Affiliatep</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Footer menu-->
+          <div class="footer__column col-6 col-sm">
+            <ul class="footer__column-menu">
+              <li class="footer__column-item">
+                <a class="footer__column-link animsition-link" href="#">Our Location</a>
+              </li>
+              <li class="footer__column-item">
+                <a class="footer__column-link animsition-link" href="#">Career</a>
+              </li>
+              <li class="footer__column-item">
+                <a class="footer__column-link animsition-link" href="about.html">About</a>
+              </li>
+              <li class="footer__column-item footer__column-item--current">
+                <a class="footer__column-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__column col-12 col-lg-1 order-md-1 order-lg-0">
+            <ul class="footer__lang-switcher lang-switcher lang-switcher--footer">
               <li class="lang-switcher__item">
                 <a class="lang-switcher__link lang-switcher__link--current">Eng</a>
               </li>
@@ -221,6 +233,43 @@
               </li>
               <li class="lang-switcher__item">
                 <a class="lang-switcher__link" href="#">Ger</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__column footer__column col-12 col-md col-lg-3 col-xl-2">
+            <!-- Social-->
+            <ul class="footer__social social">
+              <li class="social__item">
+                <a class="social__link" href="#" target="_blank">
+                  <svg width="20" height="20" aria-label="facebook icon">
+                    <use xlink:href="#facebook"></use>
+                  </svg>
+                  <span class="visually-hidden">facebook</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" target="_blank">
+                  <svg width="20" height="20" aria-label="twitter icon">
+                    <use xlink:href="#twitter"></use>
+                  </svg>
+                  <span class="visually-hidden">twitter</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" target="_blank">
+                  <svg width="20" height="20" aria-label="google-plus icon">
+                    <use xlink:href="#google-plus"></use>
+                  </svg>
+                  <span class="visually-hidden">google-plus</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" target="_blank">
+                  <svg width="20" height="20" aria-label="linkedin-original icon">
+                    <use xlink:href="#linkedin-original"></use>
+                  </svg>
+                  <span class="visually-hidden">linkedin-original</span>
+                </a>
               </li>
             </ul>
           </div>

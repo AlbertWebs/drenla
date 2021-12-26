@@ -29,4 +29,26 @@ class HomeController extends Controller
 
         return view('front.index');
     }
+
+    public function contact(){
+        SEOMeta::setTitle('Contact Us | Drenla Hub');
+        SEOMeta::setDescription('Interior Design and Architectural Visualization Hub. To speak for your unbuilt project');
+        SEOMeta::setCanonical(''.url('/').'');
+
+        OpenGraph::setDescription('Interior Design and Architectural Visualization Hub. To speak for your unbuilt project');
+        OpenGraph::setTitle('Contact Us | Drenla Hub');
+        OpenGraph::setUrl(''.url('/').'');
+        OpenGraph::addProperty('type', 'articles');
+
+        TwitterCard::setTitle('Contact Us | Drenla Hub');
+        TwitterCard::setSite('@LuizVinicius73');
+
+        JsonLd::setTitle('Contact Us | Drenla Hub');
+        JsonLd::setDescription('Interior Design and Architectural Visualization Hub. To speak for your unbuilt project');
+        JsonLd::addImage('https://localhost:8000/img/logo.jpg');
+
+        return view('front.contact');
+    }
+
+    
 }
