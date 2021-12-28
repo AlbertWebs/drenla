@@ -103,7 +103,7 @@
         <!-- Social-->
         <ul class="header__social social--white social">
           <li class="social__item">
-            <a class="social__link" href="#" target="_blank">
+            <a class="social__link" href="https://web.facebook.com/drenlahub" target="_blank">
               <svg width="20" height="20" aria-label="facebook icon">
                 <use xlink:href="#facebook"></use>
               </svg>
@@ -111,7 +111,7 @@
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#" target="_blank">
+            <a class="social__link" href="https://twitter.com/drenlahub" target="_blank">
               <svg width="20" height="20" aria-label="twitter icon">
                 <use xlink:href="#twitter"></use>
               </svg>
@@ -119,15 +119,15 @@
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#" target="_blank">
-              <svg width="20" height="20" aria-label="google-plus icon">
-                <use xlink:href="#google-plus"></use>
-              </svg>
-              <span class="visually-hidden">google-plus</span>
-            </a>
-          </li>
+              <a class="social__link" href="https://www.instagram.com/drenlahub/" target="_blank">
+                <svg width="20" height="20" aria-label="instagram icon">
+                  <use xlink:href="#instagram"></use>
+                </svg>
+                <span class="visually-hidden">instagram</span>
+              </a>
+            </li>
           <li class="social__item">
-            <a class="social__link" href="#" target="_blank">
+            <a class="social__link" href="https://www.linkedin.com/company/drenla/" target="_blank">
               <svg width="20" height="20" aria-label="linkedin-original icon">
                 <use xlink:href="#linkedin-original"></use>
               </svg>
@@ -170,7 +170,7 @@
         <!-- Social-->
         <ul class="mobile-canvas__social social">
           <li class="social__item">
-            <a class="social__link" href="#" target="_blank">
+            <a class="social__link" href="https://web.facebook.com/drenlahub" target="_blank">
               <svg width="20" height="20" aria-label="facebook icon">
                 <use xlink:href="#facebook"></use>
               </svg>
@@ -178,7 +178,7 @@
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#" target="_blank">
+            <a class="social__link" href="https://twitter.com/drenlahub" target="_blank">
               <svg width="20" height="20" aria-label="twitter icon">
                 <use xlink:href="#twitter"></use>
               </svg>
@@ -186,15 +186,15 @@
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#" target="_blank">
-              <svg width="20" height="20" aria-label="google-plus icon">
-                <use xlink:href="#google-plus"></use>
-              </svg>
-              <span class="visually-hidden">google-plus</span>
-            </a>
+              <a class="social__link" href="https://www.instagram.com/drenlahub/" target="_blank">
+                <svg width="20" height="20" aria-label="instagram icon">
+                  <use xlink:href="#instagram"></use>
+                </svg>
+                <span class="visually-hidden">instagram</span>
+              </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#" target="_blank">
+            <a class="social__link" href="https://www.linkedin.com/company/drenla/" target="_blank">
               <svg width="20" height="20" aria-label="linkedin-original icon">
                 <use xlink:href="#linkedin-original"></use>
               </svg>

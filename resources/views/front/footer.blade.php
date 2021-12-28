@@ -9,7 +9,7 @@
         </div>
         <!-- Copyrights-->
         <div class="footer__column col-12 col-lg order-2 order-lg-0">
-          <div class="footer__copyright">© Drenla Hub. <?php echo date('Y') ?>
+          <div class="footer__copyright"><a href="{{url('/')}}/copyright">Copyright</a> © Drenla Hub. <?php echo date('Y') ?>
             <br> All Rights Resevered
           </div>
           <!-- Footer menu-->
@@ -25,49 +25,42 @@
             <li class="footer__column-item">
               <a class="footer__column-link animsition-link" href="#">Privacy Policy</a>
             </li>
-            <li class="footer__column-item">
-              <a class="footer__column-link animsition-link" href="#">Help</a>
-            </li>
-            <li class="footer__column-item">
-              <a class="footer__column-link animsition-link" href="#">Affiliatep</a>
-            </li>
+            
           </ul>
         </div>
         <!-- Footer menu-->
         <div class="footer__column col-6 col-sm">
           <ul class="footer__column-menu">
             <li class="footer__column-item">
-              <a class="footer__column-link animsition-link" href="#">Our Location</a>
+                <a class="footer__column-link" href="{{url('/')}}/contact-us#map">Our Location</a>
             </li>
             <li class="footer__column-item">
-              <a class="footer__column-link animsition-link" href="#">Career</a>
+              <a class="footer__column-link animsition-link" href="{{url('/')}}/about-us">About</a>
             </li>
             <li class="footer__column-item">
-              <a class="footer__column-link animsition-link" href="about.html">About</a>
-            </li>
-            <li class="footer__column-item footer__column-item--current">
-              <a class="footer__column-link">Contact</a>
+                <a class="footer__column-link animsition-link" href="{{url('/')}}/contact-us">Contact Us</a>
             </li>
           </ul>
         </div>
         <div class="footer__column col-12 col-lg-1 order-md-1 order-lg-0">
           <ul class="footer__lang-switcher lang-switcher lang-switcher--footer">
-            <li class="lang-switcher__item">
-              <a class="lang-switcher__link lang-switcher__link--current">Eng</a>
+            <li class="footer__column-item">
+                <a class="footer__column-link animation-link" href="{{url('/')}}">Home</a>
             </li>
-            <li class="lang-switcher__item">
-              <a class="lang-switcher__link" href="#">Fra</a>
+            <li class="footer__column-item">
+                <a class="footer__column-link animation-link" href="{{url('/')}}/project">Projects</a>
             </li>
-            <li class="lang-switcher__item">
-              <a class="lang-switcher__link" href="#">Ger</a>
+            <li class="footer__column-item">
+                <a class="footer__column-link animation-link" href="{{url('/')}}/project">News</a>
             </li>
+            
           </ul>
         </div>
         <div class="footer__column footer__column col-12 col-md col-lg-3 col-xl-2">
           <!-- Social-->
           <ul class="footer__social social">
             <li class="social__item">
-              <a class="social__link" href="#" target="_blank">
+              <a class="social__link" href="https://web.facebook.com/drenlahub" target="_blank">
                 <svg width="20" height="20" aria-label="facebook icon">
                   <use xlink:href="#facebook"></use>
                 </svg>
@@ -75,7 +68,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="#" target="_blank">
+              <a class="social__link" href="https://twitter.com/drenlahub" target="_blank">
                 <svg width="20" height="20" aria-label="twitter icon">
                   <use xlink:href="#twitter"></use>
                 </svg>
@@ -83,15 +76,15 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="#" target="_blank">
-                <svg width="20" height="20" aria-label="google-plus icon">
-                  <use xlink:href="#google-plus"></use>
-                </svg>
-                <span class="visually-hidden">google-plus</span>
-              </a>
-            </li>
+                <a class="social__link" href="https://www.instagram.com/drenlahub/" target="_blank">
+                  <svg width="20" height="20" aria-label="instagram icon">
+                    <use xlink:href="#instagram"></use>
+                  </svg>
+                  <span class="visually-hidden">instagram</span>
+                </a>
+              </li>
             <li class="social__item">
-              <a class="social__link" href="#" target="_blank">
+              <a class="social__link" href="https://www.linkedin.com/company/drenla/" target="_blank">
                 <svg width="20" height="20" aria-label="linkedin-original icon">
                   <use xlink:href="#linkedin-original"></use>
                 </svg>
