@@ -72,7 +72,7 @@
           </li>
           {{-- Projects --}}
           <li class="projects-grid__item col-md-6 col-lg-4 col-xl-3">
-            <a class="card card--transparent __js_home-grid-card card--active" href="{{url('/')}}/projects" data-bg="{{asset('theme/img/picture/home-grid/1.jpg')}}">
+            <a class="card card--transparent __js_home-grid-card card--active" href="{{url('/')}}/our-portfolio" data-bg="{{asset('theme/img/picture/home-grid/1.jpg')}}">
               <div class="card__content fix-overlay">
                 <div class="card__tag"> Drenla Hub</div>
                 <h3 class="card__heading"> Our Portfolios </h3>
