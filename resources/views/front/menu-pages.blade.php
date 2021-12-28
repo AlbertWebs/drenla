@@ -15,7 +15,7 @@
        
       </li>
       <li class="navigation__item">
-        <a class="navigation__link animsition-link" href="#">News</a>
+        <a class="navigation__link animsition-link" href="{{url('/')}}/latest-news">News</a>
       </li>
       <li class="navigation__item navigation__item--current">
         <a class="navigation__link" href="{{url('/')}}/contact-us">Contact</a>

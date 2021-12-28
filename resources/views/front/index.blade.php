@@ -75,7 +75,7 @@
             <a class="card card--transparent __js_home-grid-card card--active" href="{{url('/')}}/our-portfolio" data-bg="{{asset('theme/img/picture/home-grid/1.jpg')}}">
               <div class="card__content fix-overlay">
                 <div class="card__tag"> Drenla Hub</div>
-                <h3 class="card__heading"> Our Portfolios </h3>
+                <h3 class="card__heading"> Our Portfolio </h3>
                 <div class="card__text">Interior Design and Architectural Visualization Hub. To speak for your unbuilt project</div>
               </div>
             </a>
