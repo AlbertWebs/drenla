@@ -152,13 +152,10 @@
       <!-- Lang switcher-->
       <ul class="mobile-canvas__lang-switcher lang-switcher lang-switcher--menu">
         <li class="lang-switcher__item">
-          <a class="lang-switcher__link lang-switcher__link--current">Eng</a>
+          <a class="lang-switcher__link animsition-link" href="{{url('/')}}/sitemap.html">Sitemap HTML</a>
         </li>
         <li class="lang-switcher__item">
-          <a class="lang-switcher__link" href="#">Fra</a>
-        </li>
-        <li class="lang-switcher__item">
-          <a class="lang-switcher__link" href="#">Ger</a>
+          <a class="lang-switcher__link animsition-link" href="{{url('/')}}/sitemap.xml">Sitemap XML</a>
         </li>
       </ul>
       @include('front.menu')

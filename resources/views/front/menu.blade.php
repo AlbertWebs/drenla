@@ -1,6 +1,6 @@
 <nav class="mobile-canvas__nav navigation">
     <ul class="navigation__list">
-      <li class="navigation__item navigation__item--current">
+      {{-- <li class="navigation__item navigation__item--current">
         <a class="navigation__link animsition-link " href="{{url('/')}}">Home</a>
       
       </li>
@@ -14,6 +14,6 @@
       </li>
       <li class="navigation__item navigation__item--current">
         <a class="navigation__link" href="{{url('/')}}/contact-us">Contact</a>
-      </li>
+      </li> --}}
     </ul>
   </nav>

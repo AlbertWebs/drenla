@@ -5,11 +5,11 @@
       <div class="projects-grid__inner container">
         <ul class="projects-grid__list row">
           <li class="projects-grid__item col-md-6 col-lg-4 col-xl-3">
-            <a class="card card--transparent __js_home-grid-card card--active" href="projects-detail.html" data-bg="{{asset('theme/img/picture/home-grid/1.jpg')}}">
+            <a class="card card--transparent __js_home-grid-card card--active" href="{{url('/')}}/about-us" data-bg="{{asset('theme/img/picture/home-grid/1.jpg')}}">
               <div class="card__content">
-                <div class="card__tag">Architecture</div>
-                <h3 class="card__heading">House in Forest</h3>
-                <div class="card__text">Founded in 2007, Sparch is specializing in providing innovative services such as websitFounded in 2007</div>
+                <div class="card__tag"> Drenla Hub</div>
+                <h3 class="card__heading"> About Us </h3>
+                <div class="card__text">Interior Design and Architectural Visualization Hub. To speak for your unbuilt project</div>
               </div>
             </a>
           </li>
