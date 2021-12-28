@@ -5,13 +5,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-  {{-- @favicon --}}
-  @include('favicon')
   {{-- SEO --}}
   {!! SEOMeta::generate() !!}
   {!! OpenGraph::generate() !!}
   {!! Twitter::generate() !!}
   <!-- CSS-->
+  {{-- @favicon --}}
+  @include('favicon')
   <link rel="stylesheet" href="{{asset('theme/css/bootstrap-grid.css')}}">
   <link rel="stylesheet" href="{{asset('theme/css/main.css')}}">
 </head>
