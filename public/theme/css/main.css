@@ -8893,3 +8893,16 @@ textarea.custom-input {
   margin-top: 55px;
   padding: 17px 40px;
 }
+
+.fix-overlay{
+  background-color: rgba(251, 199, 16, 0.95);
+  color:#000000 !important;
+}
+
+.fix-overlay h3{
+  color:#000000 !important;
+}
+
+.fix-overlay .card__tag{
+  color:#000000 !important;
+}

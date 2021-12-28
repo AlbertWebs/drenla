@@ -98,8 +98,11 @@
           <span class="logo__large">DrenlaHub</span>
           <span class="logo__small">Architectural Visualization</span>
         </a>
+        
         <div class="container"></div>
+        
         <a class="header__phone" href="tel:+25459947183">+254759947183</a>
+        
         <!-- Burger-->
         <button class="header__menu-toggle menu-toggle" type="button">
           <span class="visually-hidden">Menu</span>
@@ -126,7 +129,7 @@
           <a class="lang-switcher__link" href="#">Ger</a>
         </li>
       </ul>
-      @include('front.menu')
+      @include('front.menu-pages')
       <div class="mobile-canvas__bottom">
         <a class="mobile-canvas__phone" href="tel:+72126742510">+7 (212) 674-25-10</a>
         <div class="mobile-canvas__copy">
