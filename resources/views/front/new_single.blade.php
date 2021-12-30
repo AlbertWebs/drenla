@@ -316,7 +316,7 @@
             <!-- Send comment-->
             <form class="post-sb__comment-form comment-form js-form-validate" action="https://ultimatewebsolutions.net/larson/php/mail.php" method="POST">
               <div class="comment-form__title">Post a comment</div>
-              <div class="comment-form__inputs-group">
+              <div class="comment-form__inputs-group"> 
                 <div class="comment-form__field-wrapper">
                   <label class="field comment-form__field">
                     <input type="text" name="name" placeholder="Name">
