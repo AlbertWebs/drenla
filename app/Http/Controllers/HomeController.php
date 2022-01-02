@@ -110,6 +110,26 @@ class HomeController extends Controller
         return view('front.portfolio');
     }
 
+    public function folio($slung){
+        SEOMeta::setTitle('Our Projects| Drenla Hub');
+        SEOMeta::setDescription('Interior Design and Architectural Visualization Hub. To speak for your unbuilt project');
+        SEOMeta::setCanonical(''.url('/').'/latest-news');
+
+        OpenGraph::setDescription('Interior Design and Architectural Visualization Hub. To speak for your unbuilt project');
+        OpenGraph::setTitle('Latest News | Drenla Hub');
+        OpenGraph::setUrl(''.url('/').'/latest-news');
+        OpenGraph::addProperty('type', 'articles');
+
+        TwitterCard::setTitle('Latest News | Drenla Hub');
+        TwitterCard::setSite('@LuizVinicius73');
+
+        JsonLd::setTitle('Latest News | Drenla Hub');
+        JsonLd::setDescription('Interior Design and Architectural Visualization Hub. To speak for your unbuilt project');
+        JsonLd::addImage('https://localhost:8000/img/logo.jpg');
+
+        return view('front.folio');
+    }
+
 
     
 

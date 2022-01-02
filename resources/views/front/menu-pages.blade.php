@@ -11,7 +11,7 @@
       </li>
     
       <li class="navigation__item">
-        <a class="navigation__link animsition-link" href="#">Projects</a>
+        <a class="navigation__link animsition-link" href="{{url('/')}}/our-portfolio">Projects</a>
        
       </li>
       <li class="navigation__item">
