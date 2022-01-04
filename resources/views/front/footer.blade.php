@@ -17,13 +17,13 @@
         <div class="footer__column col-6 col-sm">
           <ul class="footer__column-menu">
             <li class="footer__column-item">
-              <a class="footer__column-link animsition-link" href="#">Site Map</a>
+              <a class="footer__column-link animsition-link" href="{{url('/')}}/sitemaps.html">Site Map</a>
             </li>
             <li class="footer__column-item">
-              <a class="footer__column-link animsition-link" href="#">Terms &amp; Conditions</a>
+              <a class="footer__column-link animsition-link" href="{{url('/')}}/terms-and-conditions">Terms &amp; Conditions</a>
             </li>
             <li class="footer__column-item">
-              <a class="footer__column-link animsition-link" href="#">Privacy Policy</a>
+              <a class="footer__column-link animsition-link" href="{{url('/')}}/privacy-policy">Privacy Policy</a>
             </li>
             
           </ul>
@@ -48,10 +48,10 @@
                 <a class="footer__column-link animation-link" href="{{url('/')}}">Home</a>
             </li>
             <li class="footer__column-item">
-                <a class="footer__column-link animation-link" href="{{url('/')}}/project">Projects</a>
+                <a class="footer__column-link animation-link" href="{{url('/')}}/our-portfolio">Projects</a>
             </li>
             <li class="footer__column-item">
-                <a class="footer__column-link animation-link" href="{{url('/')}}/project">News</a>
+                <a class="footer__column-link animation-link" href="{{url('/')}}/latest-news">News</a>
             </li>
             
           </ul>
