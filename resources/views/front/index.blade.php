@@ -5,7 +5,7 @@
       <div class="projects-grid__inner container">
         <ul class="projects-grid__list row">
           <li class="projects-grid__item col-md-6 col-lg-4 col-xl-3">
-            <a class="card card--transparent __js_home-grid-card" href="{{url('/')}}/our-portfolio/slung" data-bg="{{asset('theme/img/picture/home-grid/1.jpg')}}">
+            <a class="card card--transparent __js_home-grid-card" href="{{url('/')}}/our-portfolio/slung" data-bg="{{asset('theme/img/picture/home/b1.jpg')}}">
               <div class="card__content">
                 <div class="card__tag">Architecture</div>
                 <h3 class="card__heading">House in Forest</h3>
@@ -14,7 +14,7 @@
             </a>
           </li>
           <li class="projects-grid__item col-md-6 col-lg-4 col-xl-3">
-            <a class="card card--transparent __js_home-grid-card" href="{{url('/')}}/our-portfolio/slung" data-bg="{{asset('theme/img/picture/home-grid/2.jpg')}}">
+            <a class="card card--transparent __js_home-grid-card" href="{{url('/')}}/our-portfolio/slung" data-bg="{{asset('theme/img/picture/home/b2.jpg')}}">
               <div class="card__content">
                 <div class="card__tag">Architecture</div>
                 <h3 class="card__heading">No 202 Apartment</h3>
@@ -23,7 +23,7 @@
             </a>
           </li>
           <li class="projects-grid__item col-md-6 col-lg-4 col-xl-3">
-            <a class="card card--transparent __js_home-grid-card" href="{{url('/')}}/our-portfolio/slung" data-bg="{{asset('theme/img/picture/home-grid/3.jpg')}}">
+            <a class="card card--transparent __js_home-grid-card" href="{{url('/')}}/our-portfolio/slung" data-bg="{{asset('theme/img/picture/home/b3.jpg')}}">
               <div class="card__content">
                 <div class="card__tag">Interior</div>
                 <h3 class="card__heading">Living Room Interior Design</h3>
@@ -33,7 +33,7 @@
           </li>
           {{-- About Us --}}
           <li class="projects-grid__item col-md-6 col-lg-4 col-xl-3">
-            <a class="card card--transparent __js_home-grid-card card--active" href="{{url('/')}}/about-us" data-bg="{{asset('theme/img/picture/home-grid/1.jpg')}}">
+            <a class="card card--transparent __js_home-grid-card card--active" href="{{url('/')}}/about-us" data-bg="{{asset('theme/img/picture/home/b1.jpg')}}">
               <div class="card__content fix-overlay">
                 <div class="card__tag"> Drenla Hub</div>
                 <h3 class="card__heading"> About Us </h3>
@@ -43,7 +43,7 @@
           </li>
           {{-- About Us --}}
           <li class="projects-grid__item col-md-6 col-lg-4 col-xl-3">
-            <a class="card card--transparent __js_home-grid-card" href="{{url('/')}}/our-portfolio/slung" data-bg="{{asset('theme/img/picture/home-grid/5.jpg')}}">
+            <a class="card card--transparent __js_home-grid-card" href="{{url('/')}}/our-portfolio/slung" data-bg="{{asset('theme/img/picture/home/b5.jpg')}}">
               <div class="card__content">
                 <div class="card__tag">Interior</div>
                 <h3 class="card__heading">Bauhaus Architecture Studio</h3>
@@ -52,7 +52,7 @@
             </a>
           </li>
           <li class="projects-grid__item col-md-6 col-lg-4 col-xl-3">
-            <a class="card card--transparent __js_home-grid-card" href="{{url('/')}}/our-portfolio/slung" data-bg="{{asset('theme/img/picture/home-grid/6.jpg')}}">
+            <a class="card card--transparent __js_home-grid-card" href="{{url('/')}}/our-portfolio/slung" data-bg="{{asset('theme/img/picture/home/b6.jpg')}}">
               <div class="card__content">
                 <div class="card__tag">Architecture</div>
                 <h3 class="card__heading">Luthor’s Villa</h3>
@@ -62,7 +62,7 @@
           </li>
           {{-- Projects --}}
           <li class="projects-grid__item col-md-6 col-lg-4 col-xl-3">
-            <a class="card card--transparent __js_home-grid-card" href="{{url('/')}}/projects" data-bg="{{asset('theme/img/picture/home-grid/7.jpg')}}">
+            <a class="card card--transparent __js_home-grid-card" href="{{url('/')}}/projects" data-bg="{{asset('theme/img/picture/home/b7.jpg')}}">
               <div class="card__content">
                 <div class="card__tag">Drenla Hub</div>
                 <h3 class="card__heading">Our Portfolios</h3>
@@ -72,7 +72,7 @@
           </li>
           {{-- Projects --}}
           <li class="projects-grid__item col-md-6 col-lg-4 col-xl-3">
-            <a class="card card--transparent __js_home-grid-card card--active" href="{{url('/')}}/our-portfolio" data-bg="{{asset('theme/img/picture/home-grid/1.jpg')}}">
+            <a class="card card--transparent __js_home-grid-card card--active" href="{{url('/')}}/our-portfolio" data-bg="{{asset('theme/img/picture/home/b1.jpg')}}">
               <div class="card__content fix-overlay">
                 <div class="card__tag"> Drenla Hub</div>
                 <h3 class="card__heading"> Our Portfolio </h3>
@@ -82,7 +82,7 @@
           </li>
             {{-- Projects --}}
           <li class="projects-grid__item col-md-6 col-lg-4 col-xl-3">
-            <a class="card card--transparent __js_home-grid-card" href="{{url('/')}}/our-portfolio/slung" data-bg="{{asset('theme/img/picture/home-grid/9.jpg')}}">
+            <a class="card card--transparent __js_home-grid-card" href="{{url('/')}}/our-portfolio/slung" data-bg="{{asset('theme/img/picture/home/b9.jpg')}}">
               <div class="card__content">
                 <div class="card__tag">Architecture</div>
                 <h3 class="card__heading">Marton Hotel</h3>
@@ -91,7 +91,7 @@
             </a>
           </li>
           <li class="projects-grid__item col-md-6 col-lg-4 col-xl-3">
-            <a class="card card--transparent __js_home-grid-card" href="{{url('/')}}/our-portfolio/slung" data-bg="{{asset('theme/img/picture/home-grid/10.jpg')}}">
+            <a class="card card--transparent __js_home-grid-card" href="{{url('/')}}/our-portfolio/slung" data-bg="{{asset('theme/img/picture/home/b10.jpg')}}">
               <div class="card__content">
                 <div class="card__tag">Architecture</div>
                 <h3 class="card__heading">Luthor’s Villa</h3>
@@ -100,7 +100,7 @@
             </a>
           </li>
           <li class="projects-grid__item col-md-6 col-lg-4 col-xl-3">
-            <a class="card card--transparent __js_home-grid-card" href="{{url('/')}}/our-portfolio/slung" data-bg="{{asset('theme/img/picture/home-grid/11.jpg')}}">
+            <a class="card card--transparent __js_home-grid-card" href="{{url('/')}}/our-portfolio/slung" data-bg="{{asset('theme/img/picture/home/b11.jpg')}}">
               <div class="card__content">
                 <div class="card__tag">Exterior</div>
                 <h3 class="card__heading">No 8 Trump Apartment</h3>
@@ -109,7 +109,7 @@
             </a>
           </li>
           <li class="projects-grid__item col-md-6 col-lg-4 col-xl-3">
-            <a class="card card--transparent __js_home-grid-card card--active" href="{{url('/')}}/contact-us" data-bg="{{asset('theme/img/picture/home-grid/1.jpg')}}">
+            <a class="card card--transparent __js_home-grid-card card--active" href="{{url('/')}}/contact-us" data-bg="{{asset('theme/img/picture/home/b1.jpg')}}">
               <div class="card__content fix-overlay">
                 <div class="card__tag"> Drenla Hub</div>
                 <h3 class="card__heading"> Contact Us </h3>
