@@ -82,7 +82,7 @@
           </li>
             {{-- Projects --}}
           <li class="projects-grid__item col-md-6 col-lg-4 col-xl-3">
-            <a class="card card--transparent __js_home-grid-card" href="{{url('/')}}/our-portfolio/slung" data-bg="{{asset('theme/img/picture/home/b9.jpg')}}">
+            <a class="card card--transparent __js_home-grid-card" href="{{url('/')}}/our-portfolio/slung" data-bg="{{asset('theme/img/picture/home/b4.jpg')}}">
               <div class="card__content">
                 <div class="card__tag">Architecture</div>
                 <h3 class="card__heading">Marton Hotel</h3>
@@ -91,7 +91,7 @@
             </a>
           </li>
           <li class="projects-grid__item col-md-6 col-lg-4 col-xl-3">
-            <a class="card card--transparent __js_home-grid-card" href="{{url('/')}}/our-portfolio/slung" data-bg="{{asset('theme/img/picture/home/b10.jpg')}}">
+            <a class="card card--transparent __js_home-grid-card" href="{{url('/')}}/our-portfolio/slung" data-bg="{{asset('theme/img/picture/home/b5.jpg')}}">
               <div class="card__content">
                 <div class="card__tag">Architecture</div>
                 <h3 class="card__heading">Luthor’s Villa</h3>
@@ -100,7 +100,7 @@
             </a>
           </li>
           <li class="projects-grid__item col-md-6 col-lg-4 col-xl-3">
-            <a class="card card--transparent __js_home-grid-card" href="{{url('/')}}/our-portfolio/slung" data-bg="{{asset('theme/img/picture/home/b11.jpg')}}">
+            <a class="card card--transparent __js_home-grid-card" href="{{url('/')}}/our-portfolio/slung" data-bg="{{asset('theme/img/picture/home/b6.jpg')}}">
               <div class="card__content">
                 <div class="card__tag">Exterior</div>
                 <h3 class="card__heading">No 8 Trump Apartment</h3>
