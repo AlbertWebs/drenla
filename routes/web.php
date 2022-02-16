@@ -27,6 +27,12 @@ Route::get('/terms-and-conditions',[App\Http\Controllers\HomeController::class, 
 Route::get('/privacy-policy',[App\Http\Controllers\HomeController::class, 'privacy'])->name('privacy');
 Route::get('/copyright',[App\Http\Controllers\HomeController::class, 'copyright'])->name('copyright');
 
+// Clear Routes
+Route::get('/clear-cache', function() {
+    $exitCode = Artisan::call('cache:clear');
+    $exitCode2 = Artisan::call('config:clear');
+    echo "Done";
+});
 
 Auth::routes();
 Route::group(['prefix'=>'dashboard'], function(){
