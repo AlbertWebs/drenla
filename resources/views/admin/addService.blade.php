@@ -2,7 +2,7 @@
 
 @section('content')
 <div id="wrap" >
-        
+
 
         <!-- HEADER SECTION -->
         @include('admin.top')
@@ -18,13 +18,13 @@
 
         <!--PAGE CONTENT -->
         <div id="content">
-             
+
             <div class="inner" style="min-height: 700px;">
                 <div class="row">
                     <div class="col-lg-12">
-                        
+
                         <center><h2> Add Product & Service </h2></center>
-                        
+
                     </div>
                 </div>
                   <hr />
@@ -38,12 +38,12 @@
                 </div>
                   <!--END BLOCK SECTION -->
                 <hr />
-                   
-               
+
+
                   <!-- Inner Content Here -->
-                 
+
             <div class="inner">
-                
+
 
               <div class="row">
                <center>
@@ -55,10 +55,10 @@
 							   <div class="alert alert-danger">{{ Session::get('messageError') }}</div>
 				@endif
                  </center>
-                 
 
-                 <form class="form-horizontal" method="post"  action="{{url('/dashboard/add_Service')}}" enctype="multipart/form-data">
-                    
+
+                 <form class="form-horizontal" method="post"  action="{{url('/admin/add_Service')}}" enctype="multipart/form-data">
+
                  <div class="form-group">
                         <label for="text1" class="control-label col-lg-4">Title</label>
 
@@ -67,7 +67,7 @@
                         </div>
                     </div>
 
-          
+
                         <div class="col-lg-12">
                             <div class="box">
                                 <header>
@@ -89,17 +89,17 @@
                                     </ul>
                                 </header>
                                 <div id="div-1" class="body collapse in">
-                                    
+
                                         <textarea name="content" id="wysihtml5" class="form-control" rows="10"></textarea>
 
-                                    
+
                                 </div>
                             </div>
                         </div>
-                   
+
                     <center>
                     <div class="form-group col-lg-6">
-                    
+
                         <label class="control-label">Featured Image</label>
                         <div class="">
                             <div class="fileupload fileupload-new" data-provides="fileupload">
@@ -110,15 +110,15 @@
                                     <a href="#" class="btn btn-danger fileupload-exists" data-dismiss="fileupload">Remove</a>
                                 </div>
                             </div>
-                        
+
                     </div>
-                    
-                   
+
+
                     </div>
                     </center>
                     <center>
                     <div class="form-group col-lg-6">
-                    
+
                             <label class="control-label">Main Image</label>
                             <div class="">
                                 <div class="fileupload fileupload-new" data-provides="fileupload">
@@ -129,19 +129,19 @@
                                         <a href="#" class="btn btn-danger fileupload-exists" data-dismiss="fileupload">Remove</a>
                                     </div>
                                 </div>
-                            
-                        </div>
-                
-               
-                </div>
-                
 
-                  
+                        </div>
+
+
+                </div>
+
+
+
                     </center>
                     <div class="clearfix"></div>
                     <center>
                     <div class="form-group col-lg-12">
-                    
+
                             <label class="control-label">Icon</label>
                             <div class="">
                                 <div class="fileupload fileupload-new" data-provides="fileupload">
@@ -152,24 +152,24 @@
                                         <a href="#" class="btn btn-danger fileupload-exists" data-dismiss="fileupload">Remove</a>
                                     </div>
                                 </div>
-                            
-                        </div>
-                
-               
-                </div>
-                
 
-                  
+                        </div>
+
+
+                </div>
+
+
+
                     </center>
                     <div class="clearfix"></div>
                     <br><br>
                     <div class="col-lg-12 text-center">
                       <button type="submit" class="btn btn-success"><i class="icon-plus icon-white"></i> Add Service</button>
                     </div>
-                    
-                    
+
+
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                    
+
                 <form>
               </div>
 
@@ -178,7 +178,7 @@
 
 
 
-                
+
             </div>
 
         </div>

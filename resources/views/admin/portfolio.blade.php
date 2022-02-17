@@ -2,7 +2,7 @@
 
 @section('content')
 <div id="wrap" >
-        
+
 
         <!-- HEADER SECTION -->
         @include('admin.top')
@@ -18,11 +18,11 @@
 
         <!--PAGE CONTENT -->
         <div id="content">
-             
+
             <div class="inner" style="min-height: 700px;">
                 <div class="row">
                     <div class="col-lg-12">
-                        
+
                         <center><h2> Our Portfolio </h2></center>
                     </div>
                 </div>
@@ -37,7 +37,7 @@
                 </div>
                   <!--END BLOCK SECTION -->
                 <hr />
-                 
+
                  <!-- COMMENT AND NOTIFICATION  SECTION -->
                    <div class="row">
                         <div class="col-lg-12">
@@ -57,7 +57,7 @@
                                                     <th>Image</th>
                                                     <th>Edit</th>
                                                     <th>Delete</th>
-                                                    
+
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -71,28 +71,28 @@
                                                     {{$value->service}}
                                                     </td>
                                                     <td>{{$value->client}}</td>
-                                                
+
                                                     <td class="center"><img width="80" height="80" src="{{url('/')}}/uploads/portfolio/{{$value->image_one}}"></td>
-                                                    <td class="center"><a href="{{url('/dashboard')}}/editPortfolio/{{$value->id}}"   class="btn btn-info"><i class="icon-pencil icon-white"></i> Edit</a></td>
-                                                    <td class="center"><a onclick="return confirm('Do you want to delete this Porfolio?')" href="{{url('/dashboard')}}/deletePortfolio/{{$value->id}}"   class="btn btn-danger"><i class="icon-trash icon-white"></i> Del</a></td>
-                                                  
+                                                    <td class="center"><a href="{{url('/admin')}}/editPortfolio/{{$value->id}}"   class="btn btn-info"><i class="icon-pencil icon-white"></i> Edit</a></td>
+                                                    <td class="center"><a onclick="return confirm('Do you want to delete this Porfolio?')" href="{{url('/admin')}}/deletePortfolio/{{$value->id}}"   class="btn btn-danger"><i class="icon-trash icon-white"></i> Del</a></td>
+
                                                 </tr>
                                             @endforeach
-                                                
+
                                             </tbody>
                                         </table>
                                     </div>
-                                
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 <!-- END COMMENT AND NOTIFICATION  SECTION -->
-                
 
 
 
-                
+
+
             </div>
 
         </div>

@@ -35,9 +35,9 @@ Route::get('/clear-cache', function() {
 });
 
 Auth::routes();
-Route::group(['prefix'=>'dashboard'], function(){
+Route::group(['prefix'=>'admin'], function(){
 //Testimonial
-Route::get('admin/home', [App\Http\Controllers\AdminsController::class, 'index'])->name('admin.home')->middleware('is_admin');
+Route::get('/', [App\Http\Controllers\AdminsController::class, 'index'])->name('admin.home')->middleware('is_admin');
 Route::get('/addTestimonial', [App\Http\Controllers\AdminsController::class,  'addTestimonial'])->middleware('is_admin');
 Route::post('/add_Testimonial', [App\Http\Controllers\AdminsController::class,  'add_Testimonial'])->middleware('is_admin');
 Route::get('/testimonials',[App\Http\Controllers\AdminsController::class,  'testimonials'])->middleware('is_admin');

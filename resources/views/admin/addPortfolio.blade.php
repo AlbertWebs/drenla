@@ -2,7 +2,7 @@
 
 @section('content')
 <div id="wrap" >
-        
+
 
         <!-- HEADER SECTION -->
         @include('admin.top')
@@ -18,7 +18,7 @@
 
         <!--PAGE CONTENT -->
         <div id="content">
-             
+
             <div class="inner" style="min-height: 700px;">
                 <div class="row">
                     <div class="col-lg-12">
@@ -36,12 +36,12 @@
                 </div>
                   <!--END BLOCK SECTION -->
                 <hr />
-                
-               
+
+
                   <!-- Inner Content Here -->
-                 
+
             <div class="inner">
-                
+
 
               <div class="row">
                <center>
@@ -53,10 +53,10 @@
 							   <div class="alert alert-danger">{{ Session::get('messageError') }}</div>
 				@endif
                  </center>
-                 
 
-                 <form class="form-horizontal" method="post"  action="{{url('/dashboard/add_Portfolio')}}" enctype="multipart/form-data">
-                    
+
+                 <form class="form-horizontal" method="post"  action="{{url('/admin/add_Portfolio')}}" enctype="multipart/form-data">
+
                  <div class="form-group">
                         <label for="text1" class="control-label col-lg-4">Portfolio Name</label>
 
@@ -79,13 +79,13 @@
                             <input type="text" id="text1" name="location" value="" placeholder="e.g Upper Hill, Nairobi" class="form-control" />
                         </div>
                     </div>
-                    
+
 
                      <div class="form-group">
                         <label for="text1" class="control-label col-lg-4">Service Rendered</label>
                     <div class="col-lg-8">
                         <select name="service" data-placeholder="Choose a Service" class="form-control chzn-select" tabindex="2">
-                          
+
                            <?php $Service = DB::table('services')->get(); ?>
                            @foreach($Service as $value)
                               <option value="{{$value->title}}">{{$value->title}}</option>
@@ -94,7 +94,7 @@
                         </select>
                         </div>
                         </div>
-          
+
 
                         <div class="form-group">
                             <label for="limiter" class="control-label col-lg-4">Description</label>
@@ -104,11 +104,11 @@
                                 <p class="help-block">Brief Description of the product for SEO</p>
                             </div>
                         </div>
-                   
+
                     <center>
                     <div class="form-group col-lg-12">
                     <div class="form-group col-lg-4">
-                        <label class="control-label">Image One(Main)</label>
+                        <label class="control-label">Image One(1920 by 1388)</label>
                         <div class="">
                             <div class="fileupload fileupload-new" data-provides="fileupload">
                                 <div class="fileupload-new thumbnail" style="width: 200px; height: 150px;"><img src="" alt="" /></div>
@@ -120,7 +120,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="form-group col-lg-4">
                         <label class="control-label">Image Two</label>
                         <div class="">
@@ -134,7 +134,7 @@
                             </div>
                         </div>
                     </div>
-                   
+
                     <div class="form-group col-lg-4">
                         <label class="control-label">Image Three</label>
                         <div class="">
@@ -182,10 +182,10 @@
                     <div class="col-lg-12 text-center">
                       <button type="submit" class="btn btn-success"><i class="icon-plus icon-white"></i> Add Portfolio</button>
                     </div>
-                    
-                    
+
+
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                    
+
                 <form>
               </div>
 
@@ -194,7 +194,7 @@
 
 
 
-                
+
             </div>
 
         </div>

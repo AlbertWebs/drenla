@@ -9,19 +9,19 @@
                 <?php $SiteSettingss = DB::table('sitesettings')->get();?>
 
                     @foreach($SiteSettingss as $Settingss)
-                    <a href="{{url('/dashboard')}}" class="navbar-brand">
+                    <a href="{{url('/admin')}}" class="navbar-brand">
 
-                        <img width="100" src="{{url('/uploads/logo/')}}/{{$Settingss->logo}}" alt="{{ config('app.name', 'Laravel') }}" />
-                            
+                        <img width="50" src="{{url('/')}}/favicons/apple-icon-180x180.png" alt="{{ config('app.name', 'Laravel') }}" />
+
                     </a>
                     @endforeach
-                    
+
                 </header>
                 <!-- END LOGO SECTION -->
                 <ul class="nav navbar-top-links navbar-right">
                     <li>
                         <a title="Preview Website" target="new" href="{{url('/')}}">
-                            <span class="label label-danger"></span>    <i class="icon-globe"></i>&nbsp; 
+                            <span class="label label-danger"></span>    <i class="icon-globe"></i>&nbsp;
                         </a>
                     </li>
                     <!-- MESSAGES SECTION -->
@@ -42,16 +42,16 @@
                                     </div>
                                     <div>{{$Message->content}}
                                         <br />
-                                        <span class="label label-primary">Important</span> 
+                                        <span class="label label-primary">Important</span>
 
                                     </div>
                                 </a>
                             </li>
                             <li class="divider"></li>
                         @endforeach
-                           
+
                             <li>
-                                <a class="text-center" href="{{url('/dashboard/allMessages')}}">
+                                <a class="text-center" href="{{url('/admin/allMessages')}}">
                                     <strong>Read All Messages</strong>
                                     <i class="icon-angle-right"></i>
                                 </a>
@@ -61,9 +61,9 @@
                     </li>
                     <!--END MESSAGES SECTION -->
 
-       
 
-                    
+
+
 
                     <!--ADMIN SETTINGS SECTIONS -->
 
@@ -73,12 +73,12 @@
                         </a>
 
                         <ul class="dropdown-menu dropdown-user">
-                            <li><a href="{{url('/dashboard/editAdmin')}}/{{Auth::user()->id}}"><i class="icon-user-md"></i> User Profile </a>
+                            <li><a href="{{url('/admin/editAdmin')}}/{{Auth::user()->id}}"><i class="icon-user-md"></i> User Profile </a>
                             </li>
-                            <li><a href="{{url('/dashboard/sitesettings')}}"><i class="icon-gear"></i> Settings </a>
+                            <li><a href="{{url('/admin/sitesettings')}}"><i class="icon-gear"></i> Settings </a>
                             </li>
                             <li class="divider"></li>
-                            <li><a href="{{url('/dashboard/logout')}}"><i class="icon-signout"></i> Logout </a>
+                            <li><a href="{{url('/admin/logout')}}"><i class="icon-signout"></i> Logout </a>
                             </li>
                         </ul>
 

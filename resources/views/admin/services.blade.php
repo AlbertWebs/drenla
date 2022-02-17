@@ -2,7 +2,7 @@
 
 @section('content')
 <div id="wrap" >
-        
+
 
         <!-- HEADER SECTION -->
         @include('admin.top')
@@ -18,11 +18,11 @@
 
         <!--PAGE CONTENT -->
         <div id="content">
-             
+
             <div class="inner" style="min-height: 700px;">
                 <div class="row">
                     <div class="col-lg-12">
-                        
+
                         <center><h2> All Services </h2></center>
                     </div>
                 </div>
@@ -37,7 +37,7 @@
                 </div>
                   <!--END BLOCK SECTION -->
                 <hr />
-                 
+
                  <!-- COMMENT AND NOTIFICATION  SECTION -->
                    <div class="row">
                         <div class="col-lg-12">
@@ -52,11 +52,11 @@
                                                 <tr>
                                                     <th>No</th>
                                                     <th>Name</th>
-                                                   
+
                                                     <th>featured Image</th>
                                                     <th>Edit</th>
                                                     <th>Delete</th>
-                                                    
+
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -64,28 +64,28 @@
                                                 <tr class="odd gradeX">
                                                     <td>{{$value->id}}</td>
                                                     <td>{{$value->title}}</td>
-                                                
+
                                                     <td class="center"><img with="100" height="100" src="{{url('/')}}/uploads/services/{{$value->image_one}}"></td>
-                                                    <td class="center"><a href="{{url('/dashboard')}}/editServices/{{$value->id}}"   class="btn btn-info"><i class="icon-pencil icon-white"></i> Edit</a></td>
-                                                    <td class="center"><a onclick="return confirm('Do you want to delete this Service?')" href="{{url('/dashboard')}}/deleteService/{{$value->id}}"   class="btn btn-danger"><i class="icon-trash icon-white"></i> Del</a></td>
-                                                  
+                                                    <td class="center"><a href="{{url('/admin')}}/editServices/{{$value->id}}"   class="btn btn-info"><i class="icon-pencil icon-white"></i> Edit</a></td>
+                                                    <td class="center"><a onclick="return confirm('Do you want to delete this Service?')" href="{{url('/admin')}}/deleteService/{{$value->id}}"   class="btn btn-danger"><i class="icon-trash icon-white"></i> Del</a></td>
+
                                                 </tr>
                                             @endforeach
-                                                
+
                                             </tbody>
                                         </table>
                                     </div>
-                                
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 <!-- END COMMENT AND NOTIFICATION  SECTION -->
-                
 
 
 
-                
+
+
             </div>
 
         </div>

@@ -57,7 +57,7 @@
                  </center>
 
 
-                 <form class="form-horizontal" method="post"  action="{{url('/dashboard/edit_Portfolio')}}/{{$Portfolio->id}}" enctype="multipart/form-data">
+                 <form class="form-horizontal" method="post"  action="{{url('/admin/edit_Portfolio')}}/{{$Portfolio->id}}" enctype="multipart/form-data">
 
                  <div class="form-group">
                         <label for="text1" class="control-label col-lg-4">Portfolio Name</label>
@@ -110,7 +110,7 @@
                     <center>
                     <div class="form-group col-lg-12">
                     <div class="form-group col-lg-4">
-                        <label class="control-label">Image One(Main)</label>
+                        <label class="control-label">Image One(1920 by 1388)</label>
                         <div class="">
                             <div class="fileupload fileupload-new" data-provides="fileupload">
                                 <div class="fileupload-new thumbnail" style="width: 200px; height: 150px;"><img src="{{url('/')}}/uploads/portfolio/{{$Portfolio->image_one}}" alt="" /></div>

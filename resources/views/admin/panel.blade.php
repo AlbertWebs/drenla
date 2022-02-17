@@ -26,7 +26,7 @@
                 ?>
                 {!!html_entity_decode($shown_string)!!}
 
-            <a href="{{url('/dashboard/update')}}/{{$update->id}}" class="alert-link">Read Update</a>.
+            <a href="{{url('/admin/update')}}/{{$update->id}}" class="alert-link">Read Update</a>.
         </div>
 @endforeach
 
@@ -48,13 +48,13 @@
 
 
 
-                            <a class="quick-btn" href="{{url('/dashboard/allMessages')}}">
+                            <a class="quick-btn" href="{{url('/admin/allMessages')}}">
                                 <i class="icon-envelope icon-2x"></i>
                                 <span>Messages</span>
                                 <span class="label label-success"><?php $Messages = DB::table('messages')->get(); $Count = count($Messages); echo $Count ?></span>
                             </a>
 
-                            <a class="quick-btn" href="{{url('/dashboard/reviews')}}">
+                            <a class="quick-btn" href="{{url('/admin/reviews')}}">
                                 <i class="icon-comment icon-2x"></i>
                                 <span>Reviews</span>
                                 <span class="label label-success"><?php $Comments = DB::table('reviews')->get(); $Count = count($Comments); echo $Count ?></span>
@@ -66,7 +66,7 @@
 
 
 
-                            <a class="quick-btn" href="{{url('/dashboard/orders')}}">
+                            <a class="quick-btn" href="{{url('/admin/orders')}}">
                                 <i class="icon-smile icon-2x"></i>
                                 <span>Orders</span>
                                 <span class="label label-warning"><?php $Services = DB::table('orders')->get(); $Count = count($Services); echo $Count ?></span>

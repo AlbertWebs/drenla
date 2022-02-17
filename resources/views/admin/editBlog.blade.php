@@ -2,7 +2,7 @@
 
 @section('content')
 <div id="wrap" >
-        
+
 
         <!-- HEADER SECTION -->
         @include('admin.top')
@@ -18,13 +18,13 @@
 
         <!--PAGE CONTENT -->
         <div id="content">
-             
+
             <div class="inner" style="min-height: 700px;">
                 <div class="row">
                     <div class="col-lg-12">
-                        
+
                         <center><h2> Edit Blog Post </h2></center>
-                        
+
                     </div>
                 </div>
                   <hr />
@@ -38,12 +38,12 @@
                 </div>
                   <!--END BLOCK SECTION -->
                 <hr />
-                
-               
+
+
                   <!-- Inner Content Here -->
-                 
+
             <div class="inner">
-                
+
 
               <div class="row">
                <center>
@@ -55,10 +55,10 @@
 							   <div class="alert alert-danger">{{ Session::get('messageError') }}</div>
 				@endif
                  </center>
-                 
 
-                 <form class="form-horizontal" method="post"  action="{{url('/dashboard/edit_Blog')}}/{{$Blog->id}}" enctype="multipart/form-data">
-                    
+
+                 <form class="form-horizontal" method="post"  action="{{url('/admin/edit_Blog')}}/{{$Blog->id}}" enctype="multipart/form-data">
+
                  <div class="form-group">
                         <label for="text1" class="control-label col-lg-4">Title</label>
 
@@ -85,19 +85,19 @@
                     </div>
 
 
-                   
+
                      <div class="form-group">
                         <label for="text1" class="control-label col-lg-4">Category</label>
                     <div class="col-lg-8">
                         <select name="cat" data-placeholder="Choose a Category" class="form-control chzn-select" tabindex="2">
                         <option selected="selected" value="{{$Blog->cat}}">
-                             <?php 
-                             
+                             <?php
+
                                  $Category = DB::table('category')->where('id',$Blog->cat)->get();
                                  foreach ($Category as $key => $valuee) {
                                      echo $valuee->cat;
                                  }
-                             
+
                              ?>
                         </option>
                            <?php $Category = DB::table('category')->get(); ?>
@@ -108,7 +108,7 @@
                         </select>
                         </div>
                         </div>
-          
+
                         <div class="col-lg-12">
                             <div class="box">
                                 <header>
@@ -130,14 +130,14 @@
                                     </ul>
                                 </header>
                                 <div id="div-1" class="body collapse in">
-                                    
+
                                         <textarea name="content" id="wysihtml5" class="form-control" rows="10">{{$Blog->content}}</textarea>
 
-                                    
+
                                 </div>
                             </div>
                         </div>
-                   
+
                     <center>
                     <div class="form-group col-lg-12">
                     <div class="form-group col-lg-6">
@@ -153,7 +153,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="form-group col-lg-6">
                         <label class="control-label">Image Two(850 by 460)</label>
                         <div class="">
@@ -167,7 +167,7 @@
                             </div>
                         </div>
                     </div>
-                   
+
                     <div class="form-group col-lg-6">
                         <label class="control-label">Image Three</label>
                         <div class="">
@@ -196,7 +196,7 @@
                         </div>
                     </div>
 
-                   
+
                     </div>
                     </center>
                     <br><br>
@@ -207,9 +207,9 @@
                     <input type="hidden" name="image_two_cheat" value="{{$Blog->image_two}}">
                     <input type="hidden" name="image_three_cheat" value="{{$Blog->image_three}}">
                     <input type="hidden" name="image_four_cheat" value="{{$Blog->image_four}}">
-                    
+
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                    
+
                 <form>
               </div>
 
@@ -218,7 +218,7 @@
 
 
 
-                
+
             </div>
 
         </div>

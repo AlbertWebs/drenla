@@ -2,7 +2,7 @@
 
 @section('content')
 <div id="wrap" >
-        
+
 
         <!-- HEADER SECTION -->
         @include('admin.top')
@@ -18,11 +18,11 @@
 
         <!--PAGE CONTENT -->
         <div id="content">
-             
-            <div class="inner" style="min-height: 700px;"> 
+
+            <div class="inner" style="min-height: 700px;">
                 <div class="row">
                     <div class="col-lg-12">
-                        
+
                         <center><h2> Edit Service </h2></center>
                     </div>
                 </div>
@@ -37,12 +37,12 @@
                 </div>
                   <!--END BLOCK SECTION -->
                 <hr />
-                   
-               
+
+
                   <!-- Inner Content Here -->
-                 
+
             <div class="inner">
-                
+
 
               <div class="row">
                <center>
@@ -54,10 +54,10 @@
 							   <div class="alert alert-danger">{{ Session::get('messageError') }}</div>
 				@endif
                  </center>
-                 
 
-                 <form class="form-horizontal" method="post"  action="{{url('/dashboard/edit_Services')}}/{{$Services->id}}" enctype="multipart/form-data">
-                    
+
+                 <form class="form-horizontal" method="post"  action="{{url('/admin/edit_Services')}}/{{$Services->id}}" enctype="multipart/form-data">
+
                  <div class="form-group">
                         <label for="text1" class="control-label col-lg-4">Service Name</label>
 
@@ -74,7 +74,7 @@
                         </div>
                     </div>
 
-          
+
                         <div class="col-lg-12">
                             <div class="box">
                                 <header>
@@ -96,17 +96,17 @@
                                     </ul>
                                 </header>
                                 <div id="div-1" class="body collapse in">
-                                    
+
                                         <textarea name="content" id="wysihtml5" class="form-control" rows="10">{{$Services->content}}</textarea>
 
-                                    
+
                                 </div>
                             </div>
                         </div>
-                   
+
                     <center>
                         <div class="form-group col-lg-12">
-                    
+
                             <label class="control-label">Thumb Nail</label>
                             <div class="">
                                 <div class="fileupload fileupload-new" data-provides="fileupload">
@@ -117,14 +117,14 @@
                                         <a href="#" class="btn btn-danger fileupload-exists" data-dismiss="fileupload">Remove</a>
                                     </div>
                                 </div>
-                            
+
                             </div>
-                        
-                       
+
+
                         </div>
 
                     <div class="form-group col-lg-6">
-                    
+
                         <label class="control-label">Featured Image</label>
                         <div class="">
                             <div class="fileupload fileupload-new" data-provides="fileupload">
@@ -135,16 +135,16 @@
                                     <a href="#" class="btn btn-danger fileupload-exists" data-dismiss="fileupload">Remove</a>
                                 </div>
                             </div>
-                        
+
                         </div>
-                    
-                   
+
+
                     </div>
 
-                  
+
 
                 <div class="form-group col-lg-6">
-                    
+
                     <label class="control-label">Image</label>
                     <div class="">
                         <div class="fileupload fileupload-new" data-provides="fileupload">
@@ -155,16 +155,16 @@
                                 <a href="#" class="btn btn-danger fileupload-exists" data-dismiss="fileupload">Remove</a>
                             </div>
                         </div>
-                    
+
                 </div>
-                
-               
+
+
                 </div>
                     </center>
                     <div class="clearfix"></div>
                     <center>
                     <div class="form-group col-lg-12">
-                    
+
                     <label class="control-label">Icon</label>
                     <div class="">
                         <div class="fileupload fileupload-new" data-provides="fileupload">
@@ -175,10 +175,10 @@
                                 <a href="#" class="btn btn-danger fileupload-exists" data-dismiss="fileupload">Remove</a>
                             </div>
                         </div>
-                    
+
                 </div>
-                
-               
+
+
                 </div>
                     </center>
                     <div class="clearfix"></div>
@@ -186,14 +186,14 @@
                     <div class="col-lg-12 text-center">
                       <button type="submit" class="btn btn-success"><i class="icon-check icon-white"></i> Save</button>
                     </div>
-                    
-                    
+
+
                     <input type="hidden" name="image_one_cheat" value="{{$Services->image_one}}">
                     <input type="hidden" name="thumb_cheat" value="{{$Services->thumb}}">
                     <input type="hidden" name="image_two_cheat" value="{{$Services->image_two}}">
                     <input type="hidden" name="image_three_cheat" value="{{$Services->image_three}}">
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                    
+
                 <form>
               </div>
 
@@ -202,7 +202,7 @@
 
 
 
-                
+
             </div>
 
         </div>

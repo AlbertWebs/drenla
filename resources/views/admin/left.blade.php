@@ -1,7 +1,7 @@
 <div id="left" >
             <div class="media user-media well-small">
-                <a class="user-link" href="{{url('/dashboard')}}/editAdmin/{{Auth::user()->id}}">
-                    <img width="64" height="64" class="media-object img-thumbnail user-img" alt="{{Auth::user()->name}}" src="{{url('/')}}/uploads/admins/{{Auth::user()->image}}" />
+                <a class="user-link" href="{{url('/admin')}}/editAdmin/{{Auth::user()->id}}">
+                    <img width="64" height="64" class="media-object img-thumbnail user-img" alt="{{Auth::user()->name}}" src="{{url('/')}}/favicons/apple-icon-180x180.png" />
                 </a>
                 <br />
                 <div class="media-body">
@@ -22,7 +22,7 @@
 
 
                 <li class="panel active">
-                    <a href="{{url('/dashboard')}}" >
+                    <a href="{{url('/admin')}}" >
                         <i class="icon-home"></i> Dashboard
 
 
@@ -44,33 +44,33 @@
 
                         @foreach($Page as $page)
                         <?php $Portfolio = \App\Models\Portfolio::find($page->portfolio_id); ?>
-                        <li><a href="{{url('/dashboard/')}}/editLinks/{{$page->id}}"><i class="icon-angle-right"></i> {{$Portfolio->title}} </a></li>
+                        <li><a href="{{url('/admin/')}}/editLinks/{{$page->id}}"><i class="icon-angle-right"></i> Grid - {{$page->grid}} </a></li>
                         @endforeach
                         <center>&nbsp;</center>
-                        <li><a href="{{url('/dashboard/about')}}"><i class="icon-angle-right"></i> About  </a></li>
-                        <li><a href="{{url('/dashboard/privacy')}}"><i class="icon-angle-right"></i> Privacy  </a></li>
-                        <li><a href="{{url('/dashboard/terms')}}"><i class="icon-angle-right"></i> Terms  </a></li>
-                        <li><a href="{{url('/dashboard/copyright')}}"><i class="icon-angle-right"></i> Copyright  </a></li>
+                        <li><a href="{{url('/admin/about')}}"><i class="icon-angle-right"></i> About  </a></li>
+                        <li><a href="{{url('/admin/privacy')}}"><i class="icon-angle-right"></i> Privacy  </a></li>
+                        <li><a href="{{url('/admin/terms')}}"><i class="icon-angle-right"></i> Terms  </a></li>
+                        <li><a href="{{url('/admin/copyright')}}"><i class="icon-angle-right"></i> Copyright  </a></li>
 
                     </ul>
                 </li>
 
 
-                <li><a href="{{url('dashboard/addService')}}"><i class="icon-plus"></i>  <i class="icon-user-md"></i> Add Product & Services </a></li>
-                <li><a href="{{url('dashboard/addPortfolio')}}"><i class="icon-plus"></i>  <i class="icon-thumbs-up-alt"></i> Add Portfolio </a></li>
-                <li><a href="{{url('dashboard/addBlog')}}"><i class="icon-plus"></i>  <i class="icon-thumbs-up-alt"></i> Add News & Blog </a></li>
+                <li><a href="{{url('admin/addService')}}"><i class="icon-plus"></i>  <i class="icon-user-md"></i> Add Product & Services </a></li>
+                <li><a href="{{url('admin/addPortfolio')}}"><i class="icon-plus"></i>  <i class="icon-thumbs-up-alt"></i> Add Portfolio </a></li>
+                <li><a href="{{url('admin/addBlog')}}"><i class="icon-plus"></i>  <i class="icon-thumbs-up-alt"></i> Add News & Blog </a></li>
 
-                <!-- <li><a href="{{url('dashboard/addCategory')}}"><i class="icon-plus"></i>  <i class="icon-user-md"></i> Add Category </a></li> -->
-
-
-                <li><a href="{{url('dashboard/addTestimonial')}}"><i class="icon-plus"></i>  <i class="icon-thumbs-up-alt"></i> Add Testimonial </a></li>
+                <!-- <li><a href="{{url('admin/addCategory')}}"><i class="icon-plus"></i>  <i class="icon-user-md"></i> Add Category </a></li> -->
 
 
-                <li><a href="{{url('dashboard/addAdmin')}}"><i class="icon-plus"></i>  <i class="icon-user-md"></i> Add Admin & Team  </a></li>
-                <li><a href="{{url('dashboard/why')}}"><i class="icon-cog"></i> Why Choose Us </a></li>
-                <li><a href="{{url('dashboard/sitesettings')}}"><i class="icon-cog"></i> Site Settings </a></li>
-                <!-- <li><a href="{{url('dashboard/seosettings')}}"><i class="icon-cog"></i> SEO Settings </a></li> -->
-                <li><a href="{{url('dashboard/logout')}}"><i class="icon-signin"></i> Log Out </a></li>
+                {{-- <li><a href="{{url('admin/addTestimonial')}}"><i class="icon-plus"></i>  <i class="icon-thumbs-up-alt"></i> Add Testimonial </a></li> --}}
+
+
+                <li><a href="{{url('admin/addAdmin')}}"><i class="icon-plus"></i>  <i class="icon-user-md"></i> Add Admin & Team  </a></li>
+                {{-- <li><a href="{{url('admin/why')}}"><i class="icon-cog"></i> Why Choose Us </a></li> --}}
+                <li><a href="{{url('admin/sitesettings')}}"><i class="icon-cog"></i> Site Settings </a></li>
+                <!-- <li><a href="{{url('admin/seosettings')}}"><i class="icon-cog"></i> SEO Settings </a></li> -->
+                <li><a href="{{url('admin/logout')}}"><i class="icon-signin"></i> Log Out </a></li>
 
 
 

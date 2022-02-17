@@ -3248,8 +3248,9 @@ public function updatemail(Request $request){
 }
 
 public function version(){
-
-    return view('version',compact('page_title','page_name'));
+    $page_title = "Version Control";
+    $page_name = "";
+    return view('admin.version',compact('page_title','page_name'));
 }
 public function reviews(){
     $Review = Review::all();
