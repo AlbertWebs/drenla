@@ -14,7 +14,7 @@
           <div class="article__filter filter">
             <button class="filter__item filter__item--active __js_filter-btn" type="button" data-filter="*">all</button>
             @foreach ($Services as $ser)
-            <button class="filter__item __js_filter-btn" type="button" data-filter=".{{$ser->title}}">{{$ser->title}}</button>
+            <button class="filter__item __js_filter-btn" type="button" data-filter=".{{str_replace(' ', '_', $ser->title)}}">{{$ser->title}}</button>
             @endforeach
 
             {{-- <button class="filter__item __js_filter-btn" type="button" data-filter=".__js_architecture">architecture</button>
@@ -27,17 +27,15 @@
         <ul class="projects-masonry row __js_projects-grid">
 
           @foreach ($Portfolio as $folio)
-          <li class="projects-masonry__item col-12 col-md-6 col-xl-3 __js_masonry-item {{$folio->service}}">
+          <li class="projects-masonry__item col-12 col-md-6 col-xl-3 __js_masonry-item {{str_replace(' ', '_', $folio->service)}}">
             <a class="card card--small card--masonry" href="{{url('/')}}/our-portfolio/{{$folio->slug}}">
               <div class="card__image">
-                <img src="{{asset('theme/img/picture/projects/grid-2/1.jpg')}}" srcset="{{url('/')}}/uploads/porfolio/{{$folio->image_one}}" width="428" height="428" alt="">
+                <img src="{{url('/')}}/uploads/portfolio/{{$folio->image_one}}" srcset="{{url('/')}}/uploads/portfolio/{{$folio->image_one}}" width="428" height="428" alt="">
               </div>
               <div class="card__content">
-                <h3 class="card__heading">Villa
-                  <br>In
-                  <br>London
+                <h3 class="card__heading">{{$folio->title}}
                 </h3>
-                <div class="card__text">Projects for many large domestic and foreign corporations, enterprises in many elds such</div>
+                <div class="card__text">{{$folio->content}}</div>
                 <div class="card__bottom">
                   <span class="card__link">See project
                     <svg width="20" height="20">
