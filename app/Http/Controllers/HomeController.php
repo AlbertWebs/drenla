@@ -7,6 +7,7 @@ use Artesaos\SEOTools\Facades\SEOMeta;
 use Artesaos\SEOTools\Facades\OpenGraph;
 use Artesaos\SEOTools\Facades\TwitterCard;
 use Artesaos\SEOTools\Facades\JsonLd;
+use DB;
 
 class HomeController extends Controller
 {
@@ -147,7 +148,9 @@ class HomeController extends Controller
         JsonLd::setDescription('Interior Design and Architectural Visualization Hub. To speak for your unbuilt project');
         JsonLd::addImage('https://localhost:8000/img/logo.jpg');
 
-        return view('front.folio');
+        $Portfolio = DB::table('portfolio')->where('slug',$slung)->get();
+
+        return view('front.folio', compact('Portfolio'));
     }
 
     public function terms(){

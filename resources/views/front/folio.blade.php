@@ -1,12 +1,12 @@
 @extends('front.master-contact')
 @section('content')
-
-<main>
+@foreach ($Portfolio as $folio)
+  <main>
     <article class="article">
       <header class="article__header">
         <div class="container">
-          <h1 class="article__heading heading heading--size-large">Residence in Forest</h1>
-          <div class="article__header-text">“Totally focused on tools to enhance and help your content shine. We have created this theme thinking only in options helpfully for the daily needs in a creative environment like an agency,”</div>
+          <h1 class="article__heading heading heading--size-large">{{$folio->title}}</h1>
+          <div class="article__header-text">“{{$folio->content}}”</div>
         </div>
       </header>
       <div class="article__projects-slider projects-slider swiper-container __js_projects-slider">
@@ -38,27 +38,27 @@
         <ul class="article__project-meta project-meta" data-aos="fade">
           <li class="project-meta__item">
             <div class="project-meta__item-title">Client</div>
-            <div class="project-meta__item-text">Richard Hunt</div>
+            <div class="project-meta__item-text">{{$folio->client}}</div>
           </li>
           <li class="project-meta__item">
             <div class="project-meta__item-title">Completion</div>
-            <div class="project-meta__item-text">February 5th, 2017</div>
+            <div class="project-meta__item-text">{{date('M', strtotime($folio->created_at))}} {{date('d', strtotime($folio->created_at))}}, {{date('Y', strtotime($folio->created_at))}}</div>
           </li>
           <li class="project-meta__item">
             <div class="project-meta__item-title">Project type</div>
-            <div class="project-meta__item-text">Villar, Residence</div>
+            <div class="project-meta__item-text">{{$folio->service}}</div>
           </li>
           <li class="project-meta__item">
             <div class="project-meta__item-title">Designer</div>
-            <div class="project-meta__item-text">Samuel</div>
+            <div class="project-meta__item-text">Drenla Hub</div>
           </li>
         </ul>
-       
+
         <div class="process">
-           <div class="process__text" data-aos="fade">Totally focused on tools to enhance and help your content shine. We have created this theme thinking only in options helpfully for the daily needs in a creative environment like an agency, a small studio.</div>
+           <div class="process__text" data-aos="fade">{{$folio->content}}</div>
         </div>
       </div>
     </article>
   </main>
-
-@endsection
+  @endforeach
+  @endsection
