@@ -2,7 +2,7 @@
 
 @section('content')
 <div id="wrap" >
-        
+
 
         <!-- HEADER SECTION -->
         @include('admin.top')
@@ -18,13 +18,13 @@
 
         <!--PAGE CONTENT -->
         <div id="content">
-             
+
             <div class="inner" style="min-height: 700px;">
                 <div class="row">
                     <div class="col-lg-12">
-                        
+
                         <center><h2> Edit Portfolio </h2></center>
-                        
+
                     </div>
                 </div>
                   <hr />
@@ -38,12 +38,12 @@
                 </div>
                   <!--END BLOCK SECTION -->
                 <hr />
-                
-               
+
+
                   <!-- Inner Content Here -->
-                 
+
             <div class="inner">
-                
+
 
               <div class="row">
                <center>
@@ -55,10 +55,10 @@
 							   <div class="alert alert-danger">{{ Session::get('messageError') }}</div>
 				@endif
                  </center>
-                 
+
 
                  <form class="form-horizontal" method="post"  action="{{url('/dashboard/edit_Portfolio')}}/{{$Portfolio->id}}" enctype="multipart/form-data">
-                    
+
                  <div class="form-group">
                         <label for="text1" class="control-label col-lg-4">Portfolio Name</label>
 
@@ -88,7 +88,7 @@
                     <div class="col-lg-8">
                         <select name="service" data-placeholder="Choose a Service" class="form-control chzn-select" tabindex="2">
                         <?php $Servicee = DB::table('services')->where('title',$Portfolio->service)->get(); ?>
-                        
+
                           <option selected value="{{$Portfolio->service}}">@foreach($Servicee as $servicee){{$servicee->title}} @endforeach</option>
                            <?php $Service = DB::table('services')->get(); ?>
                            @foreach($Service as $value)
@@ -98,7 +98,7 @@
                         </select>
                         </div>
                         </div>
-          
+
                         <div class="form-group">
                             <label for="limiter" class="control-label col-lg-4">Description</label>
 
@@ -122,7 +122,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="form-group col-lg-4">
                         <label class="control-label">Image Two</label>
                         <div class="">
@@ -136,7 +136,7 @@
                             </div>
                         </div>
                     </div>
-                   
+
                     <div class="form-group col-lg-4">
                         <label class="control-label">Image Three</label>
                         <div class="">
@@ -190,9 +190,9 @@
                     <input type="hidden" name="image_three_cheat" value="{{$Portfolio->image_three}}">
                     <input type="hidden" name="image_four_cheat" value="{{$Portfolio->image_four}}">
                     <input type="hidden" name="image_five_cheat" value="{{$Portfolio->image_five}}">
-                    
+
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                    
+
                 <form>
               </div>
 
@@ -201,7 +201,7 @@
 
 
 
-                
+
             </div>
 
         </div>

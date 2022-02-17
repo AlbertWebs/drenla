@@ -4,33 +4,56 @@
     <div class="projects-grid">
       <div class="projects-grid__inner container">
         <ul class="projects-grid__list row">
-          <li class="projects-grid__item col-md-6 col-lg-4 col-xl-3">
-            <a class="card card--transparent __js_home-grid-card" href="{{url('/')}}/our-portfolio/slung" data-bg="{{asset('theme/img/picture/home/b1.jpg')}}">
-              <div class="card__content">
-                <div class="card__tag">Architecture</div>
-                <h3 class="card__heading">House in Forest</h3>
-                <div class="card__text">Founded in 2007, Sparch is specializing in providing innovative services such as websitFounded in 2007</div>
-              </div>
-            </a>
-          </li>
-          <li class="projects-grid__item col-md-6 col-lg-4 col-xl-3">
-            <a class="card card--transparent __js_home-grid-card" href="{{url('/')}}/our-portfolio/slung" data-bg="{{asset('theme/img/picture/home/b2.jpg')}}">
-              <div class="card__content">
-                <div class="card__tag">Architecture</div>
-                <h3 class="card__heading">No 202 Apartment</h3>
-                <div class="card__text">Founded in 2007, Sparch is specializing in providing innovative services such as websitFounded in 2007</div>
-              </div>
-            </a>
-          </li>
-          <li class="projects-grid__item col-md-6 col-lg-4 col-xl-3">
-            <a class="card card--transparent __js_home-grid-card" href="{{url('/')}}/our-portfolio/slung" data-bg="{{asset('theme/img/picture/home/b3.jpg')}}">
-              <div class="card__content">
-                <div class="card__tag">Interior</div>
-                <h3 class="card__heading">Living Room Interior Design</h3>
-                <div class="card__text">Founded in 2007, Sparch is specializing in providing innovative services such as websitFounded in 2007</div>
-              </div>
-            </a>
-          </li>
+          {{-- A1 --}}
+          <?php $Links = DB::table('links')->where('grid','A1')->get(); ?>
+          @foreach ($Links as $link)
+            <?php $Portfolio = DB::table('portfolio')->where('id',$link->portfolio_id)->get() ?>
+            @foreach ($Portfolio as $portfolio)
+                <li class="projects-grid__item col-md-6 col-lg-4 col-xl-3">
+                    <a class="card card--transparent __js_home-grid-card" href="{{url('/')}}/our-portfolio/{{$portfolio->slug}}" data-bg="{{url('/')}}/uploads/portfolio/{{$portfolio->image_one}}">
+                    <div class="card__content">
+                        <div class="card__tag">{{$portfolio->service}}</div>
+                        <h3 class="card__heading">{{$portfolio->title}}</h3>
+                        <div class="card__text">{{$portfolio->content}}</div>
+                    </div>
+                    </a>
+                </li>
+            @endforeach
+          @endforeach
+         {{-- A2 --}}
+         <?php $Links = DB::table('links')->where('grid','A2')->get(); ?>
+         @foreach ($Links as $link)
+           <?php $Portfolio = DB::table('portfolio')->where('id',$link->portfolio_id)->get() ?>
+           @foreach ($Portfolio as $portfolio)
+               <li class="projects-grid__item col-md-6 col-lg-4 col-xl-3">
+                   <a class="card card--transparent __js_home-grid-card" href="{{url('/')}}/our-portfolio/{{$portfolio->slug}}" data-bg="{{url('/')}}/uploads/portfolio/{{$portfolio->image_one}}">
+                   <div class="card__content">
+                       <div class="card__tag">{{$portfolio->service}}</div>
+                       <h3 class="card__heading">{{$portfolio->title}}</h3>
+                       <div class="card__text">{{$portfolio->content}}</div>
+                   </div>
+                   </a>
+               </li>
+           @endforeach
+         @endforeach
+          {{-- A3 --}}
+          <?php $Links = DB::table('links')->where('grid','A3')->get(); ?>
+          @foreach ($Links as $link)
+            <?php $Portfolio = DB::table('portfolio')->where('id',$link->portfolio_id)->get() ?>
+            @foreach ($Portfolio as $portfolio)
+                <li class="projects-grid__item col-md-6 col-lg-4 col-xl-3">
+                    <a class="card card--transparent __js_home-grid-card" href="{{url('/')}}/our-portfolio/{{$portfolio->slug}}" data-bg="{{url('/')}}/uploads/portfolio/{{$portfolio->image_one}}">
+                    <div class="card__content">
+                        <div class="card__tag">{{$portfolio->service}}</div>
+                        <h3 class="card__heading">{{$portfolio->title}}</h3>
+                        <div class="card__text">{{$portfolio->content}}</div>
+                    </div>
+                    </a>
+                </li>
+            @endforeach
+          @endforeach
+
+
           {{-- About Us --}}
           <li class="projects-grid__item col-md-6 col-lg-4 col-xl-3">
             <a class="card card--transparent __js_home-grid-card card--active" href="{{url('/')}}/about-us" data-bg="{{asset('theme/img/picture/home/b1.jpg')}}">
@@ -42,27 +65,63 @@
             </a>
           </li>
           {{-- About Us --}}
-          <li class="projects-grid__item col-md-6 col-lg-4 col-xl-3">
-            <a class="card card--transparent __js_home-grid-card" href="{{url('/')}}/our-portfolio/slung" data-bg="{{asset('theme/img/picture/home/b5.jpg')}}">
-              <div class="card__content">
-                <div class="card__tag">Interior</div>
-                <h3 class="card__heading">Bauhaus Architecture Studio</h3>
-                <div class="card__text">Founded in 2007, Sparch is specializing in providing innovative services such as websitFounded in 2007</div>
-              </div>
-            </a>
-          </li>
-          <li class="projects-grid__item col-md-6 col-lg-4 col-xl-3">
-            <a class="card card--transparent __js_home-grid-card" href="{{url('/')}}/our-portfolio/slung" data-bg="{{asset('theme/img/picture/home/b6.jpg')}}">
-              <div class="card__content">
-                <div class="card__tag">Architecture</div>
-                <h3 class="card__heading">Luthor’s Villa</h3>
-                <div class="card__text">Founded in 2007, Sparch is specializing in providing innovative services such as websitFounded in 2007</div>
-              </div>
-            </a>
-          </li>
+
+
+           {{-- B1 --}}
+           <?php $Links = DB::table('links')->where('grid','B1')->get(); ?>
+           @foreach ($Links as $link)
+             <?php $Portfolio = DB::table('portfolio')->where('id',$link->portfolio_id)->get() ?>
+             @foreach ($Portfolio as $portfolio)
+                 <li class="projects-grid__item col-md-6 col-lg-4 col-xl-3">
+                     <a class="card card--transparent __js_home-grid-card" href="{{url('/')}}/our-portfolio/{{$portfolio->slug}}" data-bg="{{url('/')}}/uploads/portfolio/{{$portfolio->image_one}}">
+                     <div class="card__content">
+                         <div class="card__tag">{{$portfolio->service}}</div>
+                         <h3 class="card__heading">{{$portfolio->title}}</h3>
+                         <div class="card__text">{{$portfolio->content}}</div>
+                     </div>
+                     </a>
+                 </li>
+             @endforeach
+           @endforeach
+
+           {{-- A5 --}}
+           <?php $Links = DB::table('links')->where('grid','B2')->get(); ?>
+           @foreach ($Links as $link)
+             <?php $Portfolio = DB::table('portfolio')->where('id',$link->portfolio_id)->get() ?>
+             @foreach ($Portfolio as $portfolio)
+                 <li class="projects-grid__item col-md-6 col-lg-4 col-xl-3">
+                     <a class="card card--transparent __js_home-grid-card" href="{{url('/')}}/our-portfolio/{{$portfolio->slug}}" data-bg="{{url('/')}}/uploads/portfolio/{{$portfolio->image_one}}">
+                     <div class="card__content">
+                         <div class="card__tag">{{$portfolio->service}}</div>
+                         <h3 class="card__heading">{{$portfolio->title}}</h3>
+                         <div class="card__text">{{$portfolio->content}}</div>
+                     </div>
+                     </a>
+                 </li>
+             @endforeach
+           @endforeach
+
+
+           <?php $Links = DB::table('links')->where('grid','B3')->get(); ?>
+           @foreach ($Links as $link)
+             <?php $Portfolio = DB::table('portfolio')->where('id',$link->portfolio_id)->get() ?>
+             @foreach ($Portfolio as $portfolio)
+                 <li class="projects-grid__item col-md-6 col-lg-4 col-xl-3">
+                     <a class="card card--transparent __js_home-grid-card" href="{{url('/')}}/our-portfolio/{{$portfolio->slug}}" data-bg="{{url('/')}}/uploads/portfolio/{{$portfolio->image_one}}">
+                     <div class="card__content">
+                         <div class="card__tag">{{$portfolio->service}}</div>
+                         <h3 class="card__heading">{{$portfolio->title}}</h3>
+                         <div class="card__text">{{$portfolio->content}}</div>
+                     </div>
+                     </a>
+                 </li>
+             @endforeach
+           @endforeach
+
+
           {{-- Projects --}}
           <li class="projects-grid__item col-md-6 col-lg-4 col-xl-3">
-            <a class="card card--transparent __js_home-grid-card" href="{{url('/')}}/projects" data-bg="{{asset('theme/img/picture/home/b7.jpg')}}">
+            <a class="card card--transparent __js_home-grid-card" href="{{url('/')}}/our-portfolio" data-bg="{{asset('theme/img/picture/home/b7.jpg')}}">
               <div class="card__content">
                 <div class="card__tag">Drenla Hub</div>
                 <h3 class="card__heading">Our Portfolios</h3>
@@ -71,43 +130,62 @@
             </a>
           </li>
           {{-- Projects --}}
-          <li class="projects-grid__item col-md-6 col-lg-4 col-xl-3">
-            <a class="card card--transparent __js_home-grid-card card--active" href="{{url('/')}}/our-portfolio" data-bg="{{asset('theme/img/picture/home/b1.jpg')}}">
-              <div class="card__content fix-overlay">
-                <div class="card__tag"> Drenla Hub</div>
-                <h3 class="card__heading"> Our Portfolio </h3>
-                <div class="card__text">Interior Design and Architectural Visualization Hub. To speak for your unbuilt project</div>
-              </div>
-            </a>
-          </li>
-            {{-- Projects --}}
-          <li class="projects-grid__item col-md-6 col-lg-4 col-xl-3">
-            <a class="card card--transparent __js_home-grid-card" href="{{url('/')}}/our-portfolio/slung" data-bg="{{asset('theme/img/picture/home/b4.jpg')}}">
-              <div class="card__content">
-                <div class="card__tag">Architecture</div>
-                <h3 class="card__heading">Marton Hotel</h3>
-                <div class="card__text">Founded in 2007, Sparch is specializing in providing innovative services such as websitFounded in 2007</div>
-              </div>
-            </a>
-          </li>
-          <li class="projects-grid__item col-md-6 col-lg-4 col-xl-3">
-            <a class="card card--transparent __js_home-grid-card" href="{{url('/')}}/our-portfolio/slung" data-bg="{{asset('theme/img/picture/home/b5.jpg')}}">
-              <div class="card__content">
-                <div class="card__tag">Architecture</div>
-                <h3 class="card__heading">Luthor’s Villa</h3>
-                <div class="card__text">Founded in 2007, Sparch is specializing in providing innovative services such as websitFounded in 2007</div>
-              </div>
-            </a>
-          </li>
-          <li class="projects-grid__item col-md-6 col-lg-4 col-xl-3">
-            <a class="card card--transparent __js_home-grid-card" href="{{url('/')}}/our-portfolio/slung" data-bg="{{asset('theme/img/picture/home/b6.jpg')}}">
-              <div class="card__content">
-                <div class="card__tag">Exterior</div>
-                <h3 class="card__heading">No 8 Trump Apartment</h3>
-                <div class="card__text">Founded in 2007, Sparch is specializing in providing innovative services such as websitFounded in 2007</div>
-              </div>
-            </a>
-          </li>
+
+           {{-- A6 --}}
+           <?php $Links = DB::table('links')->where('grid','C1')->get(); ?>
+           @foreach ($Links as $link)
+             <?php $Portfolio = DB::table('portfolio')->where('id',$link->portfolio_id)->get() ?>
+             @foreach ($Portfolio as $portfolio)
+                 <li class="projects-grid__item col-md-6 col-lg-4 col-xl-3">
+                     <a class="card card--transparent __js_home-grid-card" href="{{url('/')}}/our-portfolio/{{$portfolio->slug}}" data-bg="{{url('/')}}/uploads/portfolio/{{$portfolio->image_one}}">
+                     <div class="card__content">
+                         <div class="card__tag">{{$portfolio->service}}</div>
+                         <h3 class="card__heading">{{$portfolio->title}}</h3>
+                         <div class="card__text">{{$portfolio->content}}</div>
+                     </div>
+                     </a>
+                 </li>
+             @endforeach
+           @endforeach
+
+
+          {{-- A7 --}}
+          <?php $Links = DB::table('links')->where('grid','C2')->get(); ?>
+          @foreach ($Links as $link)
+            <?php $Portfolio = DB::table('portfolio')->where('id',$link->portfolio_id)->get() ?>
+            @foreach ($Portfolio as $portfolio)
+                <li class="projects-grid__item col-md-6 col-lg-4 col-xl-3">
+                    <a class="card card--transparent __js_home-grid-card" href="{{url('/')}}/our-portfolio/{{$portfolio->slug}}" data-bg="{{url('/')}}/uploads/portfolio/{{$portfolio->image_one}}">
+                    <div class="card__content">
+                        <div class="card__tag">{{$portfolio->service}}</div>
+                        <h3 class="card__heading">{{$portfolio->title}}</h3>
+                        <div class="card__text">{{$portfolio->content}}</div>
+                    </div>
+                    </a>
+                </li>
+            @endforeach
+          @endforeach
+
+
+           {{-- A8 --}}
+           <?php $Links = DB::table('links')->where('grid','C3')->get(); ?>
+           @foreach ($Links as $link)
+             <?php $Portfolio = DB::table('portfolio')->where('id',$link->portfolio_id)->get() ?>
+             @foreach ($Portfolio as $portfolio)
+                 <li class="projects-grid__item col-md-6 col-lg-4 col-xl-3">
+                     <a class="card card--transparent __js_home-grid-card" href="{{url('/')}}/our-portfolio/{{$portfolio->slug}}" data-bg="{{url('/')}}/uploads/portfolio/{{$portfolio->image_one}}">
+                     <div class="card__content">
+                         <div class="card__tag">{{$portfolio->service}}</div>
+                         <h3 class="card__heading">{{$portfolio->title}}</h3>
+                         <div class="card__text">{{$portfolio->content}}</div>
+                     </div>
+                     </a>
+                 </li>
+             @endforeach
+           @endforeach
+
+
+
           <li class="projects-grid__item col-md-6 col-lg-4 col-xl-3">
             <a class="card card--transparent __js_home-grid-card card--active" href="{{url('/')}}/contact-us" data-bg="{{asset('theme/img/picture/home/b1.jpg')}}">
               <div class="card__content fix-overlay">

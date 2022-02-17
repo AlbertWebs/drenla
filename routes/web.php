@@ -265,6 +265,14 @@ Route::post('/edit_Category/{id}', [App\Http\Controllers\AdminsController::class
 Route::get('/addCategory', [App\Http\Controllers\AdminsController::class,  'addCategory'])->middleware('is_admin');
 Route::post('/add_Category', [App\Http\Controllers\AdminsController::class,  'add_Category'])->middleware('is_admin');
 
+//Links Control
+Route::get('/links',[App\Http\Controllers\AdminsController::class,  'links'])->middleware('is_admin');
+Route::get('/editLinks/{id}',[App\Http\Controllers\AdminsController::class,  'editLinks'])->middleware('is_admin');
+Route::get('/deleteLink/{id}',[App\Http\Controllers\AdminsController::class,  'deleteLink'])->middleware('is_admin');
+Route::post('/edit_Link/{id}', [App\Http\Controllers\AdminsController::class,  'edit_Link'])->middleware('is_admin');
+Route::get('/addLink', [App\Http\Controllers\AdminsController::class,  'addLink'])->middleware('is_admin');
+Route::post('/add_Link', [App\Http\Controllers\AdminsController::class,  'add_Link'])->middleware('is_admin');
+
 //Service Renreded Control
 Route::get('/service_rendered',[App\Http\Controllers\AdminsController::class,  'service_rendered'])->middleware('is_admin');
 Route::get('/editService_rendered/{id}',[App\Http\Controllers\AdminsController::class,  'editService_rendered'])->middleware('is_admin');

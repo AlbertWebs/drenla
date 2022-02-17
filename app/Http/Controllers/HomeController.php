@@ -21,7 +21,7 @@ class HomeController extends Controller
         OpenGraph::addProperty('type', 'articles');
 
         TwitterCard::setTitle('Interior Design and Architectural Visualization | Drenla Hub');
-        TwitterCard::setSite('@LuizVinicius73');
+        TwitterCard::setSite('@drenlahub');
 
         JsonLd::setTitle('Interior Design and Architectural Visualization | Drenla Hub');
         JsonLd::setDescription('Interior Design and Architectural Visualization Hub. To speak for your unbuilt project');
@@ -41,7 +41,7 @@ class HomeController extends Controller
         OpenGraph::addProperty('type', 'articles');
 
         TwitterCard::setTitle('About Us | Drenla Hub');
-        TwitterCard::setSite('@LuizVinicius73');
+        TwitterCard::setSite('@drenlahub');
 
         JsonLd::setTitle('About Us | Drenla Hub');
         JsonLd::setDescription('Interior Design and Architectural Visualization Hub. To speak for your unbuilt project');
@@ -61,7 +61,7 @@ class HomeController extends Controller
         OpenGraph::addProperty('type', 'articles');
 
         TwitterCard::setTitle('Contact Us | Drenla Hub');
-        TwitterCard::setSite('@LuizVinicius73');
+        TwitterCard::setSite('@drenlahub');
 
         JsonLd::setTitle('Contact Us | Drenla Hub');
         JsonLd::setDescription('Interior Design and Architectural Visualization Hub. To speak for your unbuilt project');
@@ -81,7 +81,7 @@ class HomeController extends Controller
         OpenGraph::addProperty('type', 'articles');
 
         TwitterCard::setTitle('Latest News | Drenla Hub');
-        TwitterCard::setSite('@LuizVinicius73');
+        TwitterCard::setSite('@drenlahub');
 
         JsonLd::setTitle('Latest News | Drenla Hub');
         JsonLd::setDescription('Interior Design and Architectural Visualization Hub. To speak for your unbuilt project');
@@ -101,7 +101,7 @@ class HomeController extends Controller
         OpenGraph::addProperty('type', 'articles');
 
         TwitterCard::setTitle('Latest News | Drenla Hub');
-        TwitterCard::setSite('@LuizVinicius73');
+        TwitterCard::setSite('@drenlahub');
 
         JsonLd::setTitle('Latest News | Drenla Hub');
         JsonLd::setDescription('Interior Design and Architectural Visualization Hub. To speak for your unbuilt project');
@@ -121,7 +121,7 @@ class HomeController extends Controller
         OpenGraph::addProperty('type', 'articles');
 
         TwitterCard::setTitle('Latest News | Drenla Hub');
-        TwitterCard::setSite('@LuizVinicius73');
+        TwitterCard::setSite('@drenlahub');
 
         JsonLd::setTitle('Latest News | Drenla Hub');
         JsonLd::setDescription('Interior Design and Architectural Visualization Hub. To speak for your unbuilt project');
@@ -141,7 +141,7 @@ class HomeController extends Controller
         OpenGraph::addProperty('type', 'articles');
 
         TwitterCard::setTitle('Latest News | Drenla Hub');
-        TwitterCard::setSite('@LuizVinicius73');
+        TwitterCard::setSite('@drenlahub');
 
         JsonLd::setTitle('Latest News | Drenla Hub');
         JsonLd::setDescription('Interior Design and Architectural Visualization Hub. To speak for your unbuilt project');
@@ -161,7 +161,7 @@ class HomeController extends Controller
         OpenGraph::addProperty('type', 'articles');
 
         TwitterCard::setTitle('Terms and Conditions | Drenla Hub');
-        TwitterCard::setSite('@LuizVinicius73');
+        TwitterCard::setSite('@drenlahub');
 
         JsonLd::setTitle('Terms and Conditions | Drenla Hub');
         JsonLd::setDescription('Interior Design and Architectural Visualization Hub. To speak for your unbuilt project');
@@ -181,7 +181,7 @@ class HomeController extends Controller
         OpenGraph::addProperty('type', 'articles');
 
         TwitterCard::setTitle('Privacy Policy | Drenla Hub');
-        TwitterCard::setSite('@LuizVinicius73');
+        TwitterCard::setSite('@drenlahub');
 
         JsonLd::setTitle('Privacy Policy | Drenla Hub');
         JsonLd::setDescription('Interior Design and Architectural Visualization Hub. To speak for your unbuilt project');
@@ -201,7 +201,7 @@ class HomeController extends Controller
         OpenGraph::addProperty('type', 'articles');
 
         TwitterCard::setTitle('Copyright Statement | Drenla Hub');
-        TwitterCard::setSite('@LuizVinicius73');
+        TwitterCard::setSite('@drenlahub');
 
         JsonLd::setTitle('Copyright Statement | Drenla Hub');
         JsonLd::setDescription('Interior Design and Architectural Visualization Hub. To speak for your unbuilt project');

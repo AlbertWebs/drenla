@@ -1,5 +1,9 @@
 @extends('front.master-contact')
 @section('content')
+<?php
+    $Portfolio = DB::table('portfolio')->get();
+    $Services = DB::table('services')->get();
+?>
 
 <main>
     <article class="article">
@@ -9,19 +13,24 @@
           <!-- Filter projects-->
           <div class="article__filter filter">
             <button class="filter__item filter__item--active __js_filter-btn" type="button" data-filter="*">all</button>
-            <button class="filter__item __js_filter-btn" type="button" data-filter=".__js_interior">interior</button>
-            <button class="filter__item __js_filter-btn" type="button" data-filter=".__js_architecture">architecture</button>
+            @foreach ($Services as $ser)
+            <button class="filter__item __js_filter-btn" type="button" data-filter=".{{$ser->title}}">{{$ser->title}}</button>
+            @endforeach
+
+            {{-- <button class="filter__item __js_filter-btn" type="button" data-filter=".__js_architecture">architecture</button>
             <button class="filter__item __js_filter-btn" type="button" data-filter=".__js_building">building</button>
-            <button class="filter__item __js_filter-btn" type="button" data-filter=".__js_exterior">exterior</button>
+            <button class="filter__item __js_filter-btn" type="button" data-filter=".__js_exterior">exterior</button> --}}
           </div>
         </div>
       </header>
       <div class="article__main article__main--width-full container">
         <ul class="projects-masonry row __js_projects-grid">
-          <li class="projects-masonry__item col-12 col-md-6 col-xl-3 __js_masonry-item __js_interior">
-            <a class="card card--small card--masonry" href="{{url('/')}}/our-portfolio/slung">
+
+          @foreach ($Portfolio as $folio)
+          <li class="projects-masonry__item col-12 col-md-6 col-xl-3 __js_masonry-item {{$folio->service}}">
+            <a class="card card--small card--masonry" href="{{url('/')}}/our-portfolio/{{$folio->slug}}">
               <div class="card__image">
-                <img src="{{asset('theme/img/picture/projects/grid-2/1.jpg')}}" srcset="{{asset('theme/img/picture/projects/grid-2/1@2x.jpg 2x')}}" width="428" height="428" alt="">
+                <img src="{{asset('theme/img/picture/projects/grid-2/1.jpg')}}" srcset="{{url('/')}}/uploads/porfolio/{{$folio->image_one}}" width="428" height="428" alt="">
               </div>
               <div class="card__content">
                 <h3 class="card__heading">Villa
@@ -39,6 +48,8 @@
               </div>
             </a>
           </li>
+          @endforeach
+
           <li class="projects-masonry__item col-12 col-md-6 col-xl-3 __js_masonry-item __js_architecture">
             <a class="card card--small card--masonry" href="{{url('/')}}/our-portfolio/slung">
               <div class="card__image">
