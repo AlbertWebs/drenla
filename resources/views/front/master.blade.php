@@ -96,8 +96,9 @@
       <div class="header__inner">
         <!-- Logo-->
         <a class="header__logo logo animsition-link" href="{{url('/')}}">
-          <span class="logo__large">DrenlaHub</span>
-          <span class="logo__small">Architectural Visualization</span>
+          {{-- <span class="logo__large">DrenlaHub</span>
+          <span class="logo__small">Architectural Visualization</span> --}}
+          <img width="60" src="{{url('/')}}/theme/img/favicon.png">
         </a>
         <div class="container"></div>
         <!-- Social-->
@@ -241,6 +242,12 @@
   <script src="{{asset('theme/js/animsition.min.js')}}"></script>
   <!-- JavaScript-->
   <script src="{{asset('theme/js/main.js')}}"></script>
+  {{--  --}}
+  <script>
+      $(".card__content").on('mouseenter mouseleave', function () {
+        $(this).find('.card__content').fadeToggle(100);
+      });
+  </script>
 </body>
 
 
