@@ -59,7 +59,7 @@
                  </center>
 
 
-                 <form class="form-horizontal" method="post"  action="{{url('/dashboard/edit_Link')}}/{{$Link->id}}" enctype="multipart/form-data">
+                 <form class="form-horizontal" method="post"  action="{{url('/admin/edit_Link')}}/{{$Link->id}}" enctype="multipart/form-data">
 
 
 
@@ -68,49 +68,29 @@
                     <label for="text1" class="control-label col-lg-4">Grid</label>
 
                     <div class="col-lg-8">
-                        <input type="text" id="text1" name="grid" value="{{$Link->grid}}" placeholder="e.g A3, A2,B2" class="form-control" />
+                        <input type="text" id="text1" name="grid" value="{{$Link->grid}}" placeholder="e.g A3, A2,B2" class="form-control" readonly />
                     </div>
                 </div>
 
-                <div class="form-group">
-                    <label class="control-label col-lg-4">Fetured Portfolio</label>
 
-
-
-
-                    <div class="col-lg-8">
-                        <select name="portfolio_id" data-placeholder="Choose Category" class="form-control chzn-select" tabindex="2">
-                            <?php $Servicee = DB::table('portfolio')->where('id',$Link->portfolio_id)->get(); ?>
-                            @foreach($Servicee as $servicee)
-                            <option selected value="{{$Link->portfolio_id}}">{{$servicee->title}} </option>
-                            @endforeach
-                           <?php $TheCategoryList = DB::table('portfolio')->get(); ?>
-                           @foreach($TheCategoryList as $value)
-                              <option value="{{$value->id}}">{{$value->title}}</option>
-                           @endforeach
-
-                        </select>
-                    </div>
-                </div>
                 <center>
-                    <?php $Servicee = DB::table('portfolio')->where('id',$Link->portfolio_id)->get(); ?>
-                    @foreach($Servicee as $servicee)
+
                     <div class="form-group col-lg-12">
                         <div class="form-group col-lg-12">
                             <label class="control-label">Image</label>
                             <div class="">
                                 <div class="fileupload fileupload-new" data-provides="fileupload">
-                                    <div class="fileupload-new thumbnail" style="width: 200px; height: 150px;"><img src="{{url('/')}}/uploads/portfolio/{{$servicee->image_one}}" alt="" /></div>
+                                    <div class="fileupload-new thumbnail" style="width: 200px; height: 150px;"><img src="{{url('/')}}/uploads/links/{{$Link->image}}" alt="" /></div>
                                     <div class="fileupload-preview fileupload-exists thumbnail" style="max-width: 200px; max-height: 150px; line-height: 20px;"></div>
-                                    {{-- <div>
+                                    <div>
                                         <span class="btn btn-file btn-primary"><span class="fileupload-new">Select image</span><span class="fileupload-exists">Change</span><input name="image" type="file" /></span>
                                         <a href="#" class="btn btn-danger fileupload-exists" data-dismiss="fileupload">Remove</a>
-                                    </div> --}}
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    @endforeach
+
                 </center>
 
 
@@ -122,7 +102,7 @@
                       <button type="submit" class="btn btn-success"><i class="icon-save icon-white"></i> Save </button>
                     </div>
 
-                    <input type="hidden" name="image" value="{{$Link->image}}">
+                    <input type="hidden" name="image_cheat" value="{{$Link->image}}">
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
                 <form>

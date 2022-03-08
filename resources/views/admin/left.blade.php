@@ -37,7 +37,7 @@
                         <span class="pull-right">
                             <i class="icon-angle-left"></i>
                         </span>
-                        <?php $Page = DB::table('links')->get(); ?>
+                        <?php $Page = DB::table('links')->whereNotNull('image')->get(); ?>
                           &nbsp; <span class="label label-success"><?php echo count($Page) ?></span>&nbsp;
                     </a>
                     <ul class="collapse" id="error-nav">
@@ -46,11 +46,12 @@
                         <?php $Portfolio = \App\Models\Portfolio::find($page->portfolio_id); ?>
                         <li><a href="{{url('/admin/')}}/editLinks/{{$page->id}}"><i class="icon-angle-right"></i> Grid - {{$page->grid}} </a></li>
                         @endforeach
+
                         <center>&nbsp;</center>
-                        <li><a href="{{url('/admin/about')}}"><i class="icon-angle-right"></i> About  </a></li>
+                        {{-- <li><a href="{{url('/admin/about')}}"><i class="icon-angle-right"></i> About  </a></li>
                         <li><a href="{{url('/admin/privacy')}}"><i class="icon-angle-right"></i> Privacy  </a></li>
                         <li><a href="{{url('/admin/terms')}}"><i class="icon-angle-right"></i> Terms  </a></li>
-                        <li><a href="{{url('/admin/copyright')}}"><i class="icon-angle-right"></i> Copyright  </a></li>
+                        <li><a href="{{url('/admin/copyright')}}"><i class="icon-angle-right"></i> Copyright  </a></li> --}}
 
                     </ul>
                 </li>

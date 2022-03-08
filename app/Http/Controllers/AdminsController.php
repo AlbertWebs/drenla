@@ -3554,7 +3554,7 @@ public function edit_Link(Request $request, $id){
         $image = $request->image_cheat;
     }
     $updateDetails = array(
-        'portfolio_id'=>$request->portfolio_id,
+
         'grid'=>$request->grid,
         'image'=>$image
     );

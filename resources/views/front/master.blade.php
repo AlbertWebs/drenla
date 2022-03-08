@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
+<?php $Settings = DB::table('sitesettings')->get(); ?>
+
+@foreach ($Settings as $Setting)
 
 
 <head>
@@ -98,7 +101,7 @@
         <a class="header__logo logo animsition-link" href="{{url('/')}}">
           {{-- <span class="logo__large">DrenlaHub</span>
           <span class="logo__small">Architectural Visualization</span> --}}
-          <img width="60" src="{{url('/')}}/theme/img/favicon.png">
+          <img width="60" src="{{url('/')}}/theme/img/{{$Setting->logo}}">
         </a>
         <div class="container"></div>
         <!-- Social-->
@@ -250,5 +253,5 @@
   </script>
 </body>
 
-
+@endforeach
 </html>

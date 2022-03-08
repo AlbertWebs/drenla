@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
+<?php $Settings = DB::table('sitesettings')->get(); ?>
 
+@foreach ($Settings as $Setting)
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
@@ -96,14 +98,15 @@
       <div class="header__inner">
         <!-- Logo-->
         <a class="header__logo logo animsition-link" href="{{url('/')}}">
-          <span class="logo__large">DrenlaHub</span>
-          <span class="logo__small">Architectural Visualization</span>
+            {{-- <span class="logo__large">DrenlaHub</span>
+            <span class="logo__small">Architectural Visualization</span> --}}
+            <img width="60" src="{{url('/')}}/theme/img/{{$Setting->logo}}">
         </a>
-        
+
         <div class="container"></div>
-        
+
         <a class="header__phone" href="tel:+25459947183">+254759947183</a>
-        
+
         <!-- Burger-->
         <button class="header__menu-toggle menu-toggle" type="button">
           <span class="visually-hidden">Menu</span>
@@ -194,6 +197,6 @@
   <!-- JavaScript-->
   <script src="{{asset('theme/js/main.js')}}"></script>
 </body>
-
+@endforeach
 
 </html>
